@@ -56,9 +56,10 @@ public class RunJsonDataLoader implements CommandLineRunner {
 
     private void loadProductData() {
         if (productRepository.count() == 0) {
-            try (InputStream inputStream = getClass().getResourceAsStream("/data/Product.json")) {
+            try (InputStream inputStream = getClass().getResourceAsStream("/data/Products.json")) {
                 List<Product> products = objectMapper.readValue(inputStream, new TypeReference<List<Product>>() {});
                 logger.info("Product data loaded: {}", products);
+                System.out.println("these are the products " + products);
                 productRepository.saveAll(products);
             } catch (IOException e) {
                 throw new RuntimeException("Failed to load product data", e);
@@ -87,6 +88,8 @@ public class RunJsonDataLoader implements CommandLineRunner {
             } catch (IOException e) {
                 throw new RuntimeException("Failed to load MyLearning data", e);
             }
+
         }
     }
 }
+

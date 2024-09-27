@@ -12,9 +12,12 @@ function Navbar({ isLoggedIn, handleLogout }) {
           <Link to="/" className="mr-4 hover:text-keppel">
             Home
           </Link>
+          <Link to="/" className="mr-4 hover:text-keppel">
+            Learning
+          </Link>
         </div>
         <div className="flex items-center">
-          <Link to="/cart" className="mr-4 hover:text-keppel">
+          <Link to="/cart" className="mr-8 bg-white text-black hover:bg-purple-500">
             🛒 Cart
           </Link>
           {isLoggedIn ? (
@@ -28,13 +31,13 @@ function Navbar({ isLoggedIn, handleLogout }) {
             <>
               <Link
                 to="/login"
-                className="mr-4 bg-saffron text-onyx px-4 py-2 rounded hover:bg-keppel"
+                className="mr-8 bg-white text-black px-4 py-2 rounded hover:bg-purple-500"
               >
                 Login
               </Link>
               <Link
                 to="/register"
-                className="bg-saffron text-onyx px-4 py-2 rounded hover:bg-keppel"
+                className="mr-8 bg-white text-black px-4 py-2 rounded hover:bg-purple-500"
               >
                 Register
               </Link>

@@ -8,6 +8,7 @@ import java.util.List;
 
 
 @RestController
+@RequestMapping("/CraftyCorner")
 public class MyLearningController {
 
     private final MyLearningRepository myLearningRepository;

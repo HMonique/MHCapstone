@@ -1,6 +1,5 @@
 package com.CraftyCorner.Capstone.Config;
 
-
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.security.config.Customizer;
@@ -18,7 +17,7 @@ public class WebCorsConfig {
     @Bean
     public SecurityFilterChain securityFilterChain(HttpSecurity http) throws Exception {
         http.cors(Customizer.withDefaults()).csrf(AbstractHttpConfigurer::disable)
-        .authorizeHttpRequests(auth -> auth.requestMatchers("/test").permitAll()
+        .authorizeHttpRequests(auth -> auth.requestMatchers("/**").permitAll()
                 .anyRequest().authenticated());
         return http.build();
     }

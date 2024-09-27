@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { Home, Login, Register, Routes, Navbar } from "./components";
 
 function App() {
@@ -11,7 +11,7 @@ function App() {
   const handleLogout = () => {
     setIsLoggedIn(false);
   };
-
+  
   return (
     <>
       <Navbar isLoggedIn={isLoggedIn} handleLogout={handleLogout} />

@@ -1,39 +1,42 @@
 [
   {
     "id": 1,
-    "name": "Java Basics",
-    "description": "Introduction to Java programming language.",
-    "url": "http://example.com/java-basics"
+    "name": "How to Crochet for Beginners",
+    "description": "Introduction to crocheting for beginners.",
+    "skillLevel": "Beginner",
+    "url": "https://www.youtube.com/watch?v=GZesdWQG9YA"
   },
   {
     "id": 2,
-    "name": "Spring Boot",
-    "description": "Comprehensive guide to Spring Boot framework.",
-    "url": "http://example.com/spring-boot"
+    "name": "How to Embroider by Hand for Beginners",
+    "description": "Video on how to embroider by hand for beginners",
+    "skillLevel": "Beginner",
+    "url": "https://www.youtube.com/watch?v=PnNuzgSplaE"
   },
   {
     "id": 3,
-    "name": "React for Beginners",
-    "description": "Learn the basics of React.js.",
-    "url": "http://example.com/react-beginners"
+    "name": "Crochet Abbreviations",
+    "description": "Learn the abbreviations in US and UK terms for crochet.",
+    "skillLevel": "All",
+    "url": "https://www.youtube.com/watch?v=jOdPCill7OE"
   },
   {
     "id": 4,
-    "name": "Advanced JavaScript",
-    "description": "Deep dive into advanced JavaScript concepts.",
-    "url": "http://example.com/advanced-js"
+    "name": "Knitting for Complete Beginners",
+    "description": "A video playlist to learn how to knit",
+    "url": "https://www.youtube.com/playlist?list=PLktwZD2r4pJiDcwCBytrAp1GXCbLrLcMx"
   },
   {
     "id": 5,
-    "name": "Node.js Essentials",
-    "description": "Essential concepts and features of Node.js.",
-    "url": "http://example.com/nodejs-essentials"
+    "name": "How to read a knit pattern & Common knit abbreviations",
+    "description": "Learn how to read a knit pattern and the common abbreviations associated with knitting.",
+    "url": "https://www.youtube.com/watch?v=XkMZtWu_QPQ"
   },
   {
     "id": 6,
-    "name": "TypeScript Fundamentals",
-    "description": "Learn the fundamentals of TypeScript.",
-    "url": "http://example.com/typescript-fundamentals"
+    "name": "How to crochet a scarf",
+    "description": "Learn how to crochet a scarf with this video tutorial.",
+    "url": "https://www.youtube.com/watch?app=desktop&v=LGDG-1-pDns"
   },
   {
     "id": 7,

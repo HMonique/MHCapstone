@@ -14,7 +14,6 @@ public class MyLearning {
     private Integer id;
     private String name;
     private String description;
-    private String supplies;
     private String skillLevel;
     private String url;
 }

@@ -4,7 +4,7 @@ export default {
   theme: {
     extend: {
       colors: {
-        onyx: "#35373D", // Primary
+        onyx: "#be185d", // Primary
         timberwolf: "#D9D9D9", // Secondary
         platinum: "#E6E6E6", // Tertiary
         keppel: "#47B8B8", // Accent

@@ -4,7 +4,7 @@
     "name": "Handcrafted Wooden Bowl",
     "description": "A beautifully handcrafted wooden bowl made from oak.",
     "category": "Kitchenware",
-    "image": "wooden_bowl.jpg",
+    "image_url": "https://res.cloudinary.com/dz6nyvamk/image/upload/v1727117817/Giraffe_pmlqpi.jpg",
     "price": 25.99
   },
   {
@@ -12,7 +12,7 @@
     "name": "Ceramic Vase",
     "description": "A decorative ceramic vase with intricate patterns.",
     "category": "Home Decor",
-    "image": "ceramic_vase.jpg",
+    "image_url": "https://res.cloudinary.com/dz6nyvamk/image/upload/v1727117817/Giraffe_pmlqpi.jpg",
     "price": 45.50
   },
   {
@@ -20,7 +20,7 @@
     "name": "Knitted Scarf",
     "description": "A warm and cozy knitted scarf made from wool.",
     "category": "Apparel",
-    "image": "knitted_scarf.jpg",
+    "image_url": "https://res.cloudinary.com/dz6nyvamk/image/upload/v1727117817/Giraffe_pmlqpi.jpg",
     "price": 15.75
   },
   {
@@ -28,7 +28,7 @@
     "name": "Leather Wallet",
     "description": "A durable leather wallet with multiple compartments.",
     "category": "Accessories",
-    "image": "leather_wallet.jpg",
+    "image_url": "https://res.cloudinary.com/dz6nyvamk/image/upload/v1727117817/Giraffe_pmlqpi.jpg",
     "price": 35.00
   },
   {
@@ -36,7 +36,7 @@
     "name": "Handmade Soap",
     "description": "Organic handmade soap with lavender scent.",
     "category": "Bath & Body",
-    "image": "handmade_soap.jpg",
+    "image_url": "https://res.cloudinary.com/dz6nyvamk/image/upload/v1727117817/Giraffe_pmlqpi.jpg",
     "price": 8.99
   },
   {
@@ -44,7 +44,7 @@
     "name": "Bamboo Cutting Board",
     "description": "Eco-friendly bamboo cutting board for your kitchen.",
     "category": "Kitchenware",
-    "image": "bamboo_cutting_board.jpg",
+    "image_url": "https://res.cloudinary.com/dz6nyvamk/image/upload/v1727117817/Giraffe_pmlqpi.jpg",
     "price": 20.00
   },
   {
@@ -52,7 +52,7 @@
     "name": "Woolen Hat",
     "description": "A stylish woolen hat to keep you warm during winter.",
     "category": "Apparel",
-    "image": "woolen_hat.jpg",
+    "image_url": "https://res.cloudinary.com/dz6nyvamk/image/upload/v1727117817/Giraffe_pmlqpi.jpg",
     "price": 12.50
   },
   {
@@ -60,7 +60,7 @@
     "name": "Glass Pendant Light",
     "description": "A modern glass pendant light for your living room.",
     "category": "Lighting",
-    "image": "glass_pendant_light.jpg",
+    "image_url": "https://res.cloudinary.com/dz6nyvamk/image/upload/v1727117817/Giraffe_pmlqpi.jpg",
     "price": 60.00
   },
   {
@@ -68,7 +68,7 @@
     "name": "Hand-painted Mug",
     "description": "A unique hand-painted mug for your coffee or tea.",
     "category": "Kitchenware",
-    "image": "hand_painted_mug.jpg",
+    "image_url": "https://res.cloudinary.com/dz6nyvamk/image/upload/v1727117817/Giraffe_pmlqpi.jpg",
     "price": 10.99
   },
   {
@@ -76,7 +76,7 @@
     "name": "Cotton Tote Bag",
     "description": "A reusable cotton tote bag for your shopping needs.",
     "category": "Accessories",
-    "image": "cotton_tote_bag.jpg",
+    "image_url": "https://res.cloudinary.com/dz6nyvamk/image/upload/v1727117817/Giraffe_pmlqpi.jpg",
     "price": 5.99
   }
 ]

@@ -32,13 +32,26 @@ public class DatabaseCleanUp {
 
         @PreDestroy
         public void dropDatabaseTables() {
-            // Drop tables
+
             try (Connection connection = dataSource.getConnection()) {
                 Statement statement = connection.createStatement();
-                statement.execute("DROP TABLE learning");
-                statement.execute("DROP TABLE user");
+
+                // Drop tables
+
+
                 statement.execute("DROP TABLE product");
+
+                statement.execute("DROP TABLE learning");
+
+
+                statement.execute("DROP TABLE roles_users");
                 statement.execute("DROP TABLE roles");
+
+                statement.execute("DROP TABLE user");
+
+
+
+
 
                 logger.info("Tables dropped");
             } catch (Exception e) {
