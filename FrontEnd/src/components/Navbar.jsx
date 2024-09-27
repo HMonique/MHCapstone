@@ -12,7 +12,7 @@ function Navbar({ isLoggedIn, handleLogout }) {
           <Link to="/" className="mr-4 hover:text-keppel">
             Home
           </Link>
-          <Link to="/" className="mr-4 hover:text-keppel">
+          <Link to="/learning" className="mr-4 hover:text-keppel">
             Learning
           </Link>
         </div>

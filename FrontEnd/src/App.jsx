@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import { Home, Login, Register, Routes, Navbar } from "./components";
+import { Routes, Navbar } from "./components";
 
 function App() {
   const [isLoggedIn, setIsLoggedIn] = useState(false);
@@ -16,6 +16,7 @@ function App() {
     <>
       <Navbar isLoggedIn={isLoggedIn} handleLogout={handleLogout} />
       <Routes isLoggedIn={isLoggedIn} handleLogin={handleLogin} />
+      <Routes />
     </>
   );
 }
