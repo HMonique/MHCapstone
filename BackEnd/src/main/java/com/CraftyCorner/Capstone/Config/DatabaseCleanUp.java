@@ -36,21 +36,13 @@ public class DatabaseCleanUp {
             try (Connection connection = dataSource.getConnection()) {
                 Statement statement = connection.createStatement();
 
-                // Drop tables
-
 
                 statement.execute("DROP TABLE product");
-
                 statement.execute("DROP TABLE learning");
-
-
                 statement.execute("DROP TABLE roles_users");
                 statement.execute("DROP TABLE roles");
-
                 statement.execute("DROP TABLE user");
-
-
-
+                statement.execute("DROP TABLE supplies");
 
 
                 logger.info("Tables dropped");

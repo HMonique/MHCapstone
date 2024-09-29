@@ -10,17 +10,13 @@ function Routes({ isLoggedIn, handleLogin }) {
       <Route path="/" element={<Home />} />
       <Route path="/item/:id" element={<SingleItem />} />
       <Route path="/cart" element={<Cart />} />
-      <Route 
-        path="/login"
-        element={
+      <Route path="/login" element={
           <AuthWrapper title="Login">
             <Login handleLogin={handleLogin} />
           </AuthWrapper>
         }
       />
-      <Route
-        path="/register"
-        element={
+      <Route path="/register" element={
           <AuthWrapper title="Register">
             <Register />
           </AuthWrapper>

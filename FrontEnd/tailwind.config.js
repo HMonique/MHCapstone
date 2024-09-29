@@ -4,11 +4,11 @@ export default {
   theme: {
     extend: {
       colors: {
-        onyx: "#be185d", // Primary
-        timberwolf: "#D9D9D9", // Secondary
-        platinum: "#E6E6E6", // Tertiary
-        keppel: "#47B8B8", // Accent
-        saffron: "#F4C430", // Accent
+        onyx: "#be185d", 
+        timberwolf: "#D9D9D9", 
+        platinum: "#E6E6E6",
+        keppel: "#47B8B8", 
+        saffron: "#F4C430", 
       },
     },
   },

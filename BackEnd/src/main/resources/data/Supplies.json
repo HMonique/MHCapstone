@@ -1,0 +1,62 @@
+[
+  {
+    "id": 1,
+    "name": "Acrylic Paint Set",
+    "description": "Acrylic Paint Set",
+    "price": 25
+  },
+  {
+    "id": 2,
+    "name": "Canvas Board",
+    "description": "Canvas Board",
+    "price": 15
+  },
+  {
+    "id": 3,
+    "name": "Brush Set",
+    "description": "Brush Set",
+    "price": 10
+  },
+  {
+    "id": 4,
+    "name": "Sketchbook",
+    "description": "Sketchbook",
+    "price": 20
+  },
+  {
+    "id": 5,
+    "name": "Watercolor Paint Set",
+    "description": "Watercolor Paint Set",
+    "price": 30
+  },
+  {
+    "id": 6,
+    "name": "Easel",
+    "description": "Easel",
+    "price": 50
+  },
+  {
+    "id": 7,
+    "name": "Palette",
+    "description": "Palette",
+    "price": 8
+  },
+  {
+    "id": 8,
+    "name": "Charcoal Pencils",
+    "description": "Charcoal Pencils",
+    "price": 12
+  },
+  {
+    "id": 9,
+    "name": "Oil Paint Set",
+    "description": "Oil Paint Set",
+    "price": 35
+  },
+  {
+    "id": 10,
+    "name": "Drawing Paper",
+    "description": "Drawing Paper",
+    "price": 18
+  }
+]

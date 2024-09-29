@@ -1,10 +1,7 @@
 package com.CraftyCorner.Capstone.Config;
 
 import com.CraftyCorner.Capstone.Common.*;
-import com.CraftyCorner.Capstone.Model.MyAppUser;
-import com.CraftyCorner.Capstone.Model.MyLearning;
-import com.CraftyCorner.Capstone.Model.Product;
-import com.CraftyCorner.Capstone.Model.Roles;
+import com.CraftyCorner.Capstone.Model.*;
 import com.fasterxml.jackson.core.type.TypeReference;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import org.slf4j.Logger;
@@ -24,13 +21,15 @@ public class RunJsonDataLoader implements CommandLineRunner {
     private final ProductRepository productRepository;
     private final RolesRepository rolesRepository;
     private final MyLearningRepository mylearningRepository;
+    private final SuppliesRepository suppliesRepository;
     private final ObjectMapper objectMapper;
 
-    public RunJsonDataLoader(UserRepository userRepository, ProductRepository productRepository, RolesRepository rolesRepository, MyLearningRepository mylearningRepository, ObjectMapper objectMapper) {
+    public RunJsonDataLoader(UserRepository userRepository, ProductRepository productRepository, RolesRepository rolesRepository, MyLearningRepository mylearningRepository, SuppliesRepository suppliesRepository, ObjectMapper objectMapper) {
         this.userRepository = userRepository;
         this.productRepository = productRepository;
         this.rolesRepository = rolesRepository;
         this.mylearningRepository = mylearningRepository;
+        this.suppliesRepository = suppliesRepository;
         this.objectMapper = objectMapper;
     }
 
@@ -40,6 +39,7 @@ public class RunJsonDataLoader implements CommandLineRunner {
         loadUserData();
         loadProductData();
         loadMyLearningData();
+        loadSuppliesData();
     }
 
     private void loadUserData() {
@@ -88,8 +88,18 @@ public class RunJsonDataLoader implements CommandLineRunner {
             } catch (IOException e) {
                 throw new RuntimeException("Failed to load MyLearning data", e);
             }
+        }
+    }
 
+    private void loadSuppliesData() {
+        if (suppliesRepository.count() == 0) {
+            try (InputStream inputStream = getClass().getResourceAsStream("/data/Supplies.json")) {
+                List<Supplies> supplies = objectMapper.readValue(inputStream, new TypeReference<List<Supplies>>() {});
+                logger.info("Supplies data loaded: {}", supplies);
+                suppliesRepository.saveAll(supplies);
+            } catch (IOException e) {
+                throw new RuntimeException("Failed to load supplies data", e);
+            }
         }
     }
 }
-

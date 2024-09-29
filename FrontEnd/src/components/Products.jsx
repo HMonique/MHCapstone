@@ -1,11 +1,25 @@
-import React, { useContext } from "react";
+import React, { useContext, useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
 import { StoreProvider } from "../store/ContextProvider";
-import { useEffect, useState } from "react";
 
 function Products() {
-  const { state, dispatch } = useContext(StoreProvider);
+  const { dispatch } = useContext(StoreProvider);
   const navigate = useNavigate();
+  const [mydata, setMyData] = useState([]);
+  const [showCartOption, setShowCartOption] = useState(false);
+
+  useEffect(() => {
+    async function fetchData() {
+      try {
+        const response = await fetch("http://localhost:8080/CraftyCorner/product");
+        const data = await response.json();
+        setMyData(data);
+      } catch (error) {
+        console.error(error);
+      }
+    }
+    fetchData();
+  }, []);
 
   const handleItemClick = (id) => {
     navigate(`/item/${id}`);
@@ -14,28 +28,20 @@ function Products() {
   const addToCart = (e, product) => {
     e.stopPropagation();
     dispatch({ type: "ADD_TO_CART", payload: product });
+    setShowCartOption(true);
+    setTimeout(() => setShowCartOption(false), 5000); // Hide option after 5 seconds
   };
 
-  const [mydata, setMyData] = useState([]);
-  useEffect(()=>{ async function fetchData() {
-      try {
-        const response = await fetch("http://localhost:8080/CraftyCorner/product");
-        const data = await response.json();
-        setMyData(data);
-      } catch (error) {
-        console.error(error);
-      }}
-    fetchData();
-      }, []);
-  console.log(mydata);
+  const goToCart = () => {
+    navigate("/cart");
+  };
 
   return (
-    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-      {mydata.map((product, index) => {
-        console.log(product.image_url); // Log the image URL here
-        return (
+    <div className="relative">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        {mydata.map((product) => (
           <div
-            key={index}
+            key={product.id}
             className="bg-platinum p-4 rounded-lg shadow-md cursor-pointer"
             onClick={() => handleItemClick(product.id)}
           >
@@ -44,7 +50,7 @@ function Products() {
               alt={product.name}
               className="w-full h-48 object-cover mb-4 rounded"
               onError={(e) => {
-                e.target.src = 'path/to/placeholder/image.jpg'; // Fallback image
+                e.target.src = '/path/to/placeholder/image.jpg';
               }}
             />
             <h2 className="text-xl font-semibold mb-2">{product.name}</h2>
@@ -57,8 +63,19 @@ function Products() {
               Add to Cart
             </button>
           </div>
-        );
-      })}
+        ))}
+      </div>
+      {showCartOption && (
+        <div className="fixed bottom-4 right-4 bg-keppel text-platinum p-4 rounded-lg shadow-lg">
+          <p className="mb-2">Item added to cart!</p>
+          <button
+            className="bg-saffron text-onyx px-4 py-2 rounded hover:bg-platinum hover:text-keppel transition-colors"
+            onClick={goToCart}
+          >
+            Go to Cart
+          </button>
+        </div>
+      )}
     </div>
   );
 }

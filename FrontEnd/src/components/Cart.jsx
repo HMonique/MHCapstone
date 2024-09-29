@@ -1,8 +1,10 @@
-import React, { useContext } from "react";
+import React, { useContext, useState } from "react";
 import { StoreProvider } from "../store/ContextProvider";
 
 function Cart() {
   const { state, dispatch } = useContext(StoreProvider);
+  const [isProcessingPayment, setIsProcessingPayment] = useState(false);
+  const [paymentError, setPaymentError] = useState(null);
 
   const removeFromCart = (id) => {
     dispatch({ type: "REMOVE_FROM_CART", payload: id });
@@ -12,10 +14,35 @@ function Cart() {
     dispatch({ type: "UPDATE_QUANTITY", payload: { id, quantity } });
   };
 
+  const emptyCart = () => {
+    if (window.confirm("Are you sure you want to empty your cart?")) {
+      dispatch({ type: "CLEAR_CART" });
+    }
+  };
+
   const total = state.cart.reduce(
     (sum, item) => sum + item.price * item.quantity,
     0
   );
+
+  const handlePayment = async () => {
+    setIsProcessingPayment(true);
+    setPaymentError(null);
+
+    try {
+      // Simulate payment processing
+      await new Promise(resolve => setTimeout(resolve, 2000));
+      
+      // If payment is successful, clear the cart
+      dispatch({ type: "CLEAR_CART" });
+      alert("Payment successful! Thank you for your purchase.");
+    } catch (error) {
+      console.error("Payment error:", error);
+      setPaymentError("An error occurred while processing your payment. Please try again.");
+    } finally {
+      setIsProcessingPayment(false);
+    }
+  };
 
   return (
     <div className="container mx-auto p-4">
@@ -24,6 +51,12 @@ function Cart() {
         <p>Your cart is empty.</p>
       ) : (
         <>
+          <button
+            onClick={emptyCart}
+            className="mb-4 bg-red-500 text-white px-4 py-2 rounded hover:bg-red-600"
+          >
+            Empty Cart
+          </button>
           {state.cart.map((item) => (
             <div
               key={item.id}
@@ -60,6 +93,19 @@ function Cart() {
           ))}
           <div className="mt-4">
             <p className="text-xl font-bold">Total: ${total.toFixed(2)}</p>
+          </div>
+          
+          {/* Payment section */}
+          <div className="mt-8">
+            <h3 className="text-xl font-bold mb-4">Payment</h3>
+            {paymentError && <p className="text-red-500 mb-4">{paymentError}</p>}
+            <button
+              onClick={handlePayment}
+              disabled={isProcessingPayment}
+              className="bg-green-500 text-white px-4 py-2 rounded hover:bg-green-600 disabled:bg-gray-400"
+            >
+              {isProcessingPayment ? "Processing..." : "Proceed to Payment"}
+            </button>
           </div>
         </>
       )}

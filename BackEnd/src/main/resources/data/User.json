@@ -2,7 +2,7 @@
   {
     "id": 1,
     "username": "john_doe",
-    "password": "password123",
+    "password": "password1230",
     "email": "john.doe@example.com",
     "roles": [
       {
@@ -14,7 +14,7 @@
   {
     "id": 2,
     "username": "jane_smith",
-    "password": "password123",
+    "password": "password1234",
     "email": "jane.smith@example.com",
     "roles": [
       {
@@ -26,7 +26,7 @@
   {
     "id": 3,
     "username": "alice_jones",
-    "password": "password123",
+    "password": "password1231",
     "email": "alice.jones@example.com",
     "roles": [
       {
@@ -38,7 +38,7 @@
   {
     "id": 4,
     "username": "bob_brown",
-    "password": "password123",
+    "password": "password1235",
     "email": "bob.brown@example.com",
     "roles": [
       {
@@ -50,7 +50,7 @@
   {
     "id": 5,
     "username": "charlie_davis",
-    "password": "password123",
+    "password": "password1236",
     "email": "charlie.davis@example.com",
     "roles": [
       {
@@ -62,7 +62,7 @@
   {
     "id": 6,
     "username": "david_evans",
-    "password": "password123",
+    "password": "password0123",
     "email": "david.evans@example.com",
     "roles": [
       {
@@ -74,7 +74,7 @@
   {
     "id": 7,
     "username": "emma_frank",
-    "password": "password123",
+    "password": "password1123",
     "email": "emma.frank@example.com",
     "roles": [
       {
@@ -86,7 +86,7 @@
   {
     "id": 8,
     "username": "frank_green",
-    "password": "password123",
+    "password": "password1223",
     "email": "frank.green@example.com",
     "roles": [
       {
@@ -98,7 +98,7 @@
   {
     "id": 9,
     "username": "grace_hill",
-    "password": "password123",
+    "password": "password1323",
     "email": "grace.hill@example.com",
     "roles": [
       {
@@ -110,7 +110,7 @@
   {
     "id": 10,
     "username": "henry_ivan",
-    "password": "password123",
+    "password": "password1233",
     "email": "henry.ivan@example.com",
     "roles": [
       {

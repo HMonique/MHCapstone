@@ -4,56 +4,73 @@ function Login({ handleLogin }) {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [error, setError] = useState("");
+  const [isResettingPassword, setIsResettingPassword] = useState(false);
+  const [resetEmail, setResetEmail] = useState("");
+  const [resetMessage, setResetMessage] = useState("");
 
   const decryptPassword = async (encryptedPassword, key, iv) => {
-    const decoder = new TextDecoder();
-    const importedKey = await crypto.subtle.importKey(
-      "raw",
-      Uint8Array.from(atob(key), (c) => c.charCodeAt(0)),
-      { name: "AES-GCM", length: 256 },
-      false,
-      ["decrypt"]
-    );
-    const decryptedData = await crypto.subtle.decrypt(
-      {
-        name: "AES-GCM",
-        iv: Uint8Array.from(atob(iv), (c) => c.charCodeAt(0)),
-      },
-      importedKey,
-      Uint8Array.from(atob(encryptedPassword), (c) => c.charCodeAt(0))
-    );
-    return decoder.decode(decryptedData);
+    // ... (keep the existing decryptPassword function)
   };
 
   const handleSubmit = async (e) => {
+    // ... (keep the existing handleSubmit function)
+  };
+
+  const handleResetPassword = async (e) => {
     e.preventDefault();
-    setError("");
+    setResetMessage("");
 
     try {
-      const storedUser = JSON.parse(localStorage.getItem("user"));
-
-      if (!storedUser) {
-        setError("User not found");
-        return;
-      }
-
-      const decryptedPassword = await decryptPassword(
-        storedUser.encryptedPassword,
-        storedUser.key,
-        storedUser.iv
-      );
-
-      if (storedUser.email === email && decryptedPassword === password) {
-        console.log("Login successful");
-        handleLogin();
-      } else {
-        setError("Invalid email or password");
-      }
+      // In a real application, this would be an API call to initiate password reset
+      // For this example, we'll just simulate the process
+      await new Promise(resolve => setTimeout(resolve, 1000)); // Simulate API call
+      setResetMessage("Password reset instructions sent to your email.");
+      setResetEmail("");
     } catch (error) {
-      console.error("Login error:", error);
-      setError("An error occurred during login");
+      console.error("Password reset error:", error);
+      setResetMessage("An error occurred. Please try again.");
     }
   };
+
+  if (isResettingPassword) {
+    return (
+      <form className="space-y-6" onSubmit={handleResetPassword}>
+        <h2 className="text-2xl font-bold mb-4">Reset Password</h2>
+        {resetMessage && <p className="text-green-500">{resetMessage}</p>}
+        <div>
+          <label htmlFor="resetEmail" className="block text-sm font-medium text-onyx">
+            Email
+          </label>
+          <input
+            type="email"
+            id="resetEmail"
+            name="resetEmail"
+            required
+            value={resetEmail}
+            onChange={(e) => setResetEmail(e.target.value)}
+            className="mt-1 block w-full px-3 py-2 bg-timberwolf border border-onyx rounded-md shadow-sm focus:outline-none focus:ring-keppel focus:border-keppel"
+          />
+        </div>
+        <div>
+          <button
+            type="submit"
+            className="w-full flex justify-center py-2 px-4 border border-transparent rounded-md shadow-sm text-sm font-medium text-platinum bg-saffron hover:bg-keppel focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-keppel"
+          >
+            Send Reset Instructions
+          </button>
+        </div>
+        <div>
+          <button
+            type="button"
+            onClick={() => setIsResettingPassword(false)}
+            className="w-full flex justify-center py-2 px-4 border border-transparent rounded-md shadow-sm text-sm font-medium text-onyx bg-timberwolf hover:bg-platinum focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-keppel"
+          >
+            Back to Login
+          </button>
+        </div>
+      </form>
+    );
+  }
 
   return (
     <form className="space-y-6" onSubmit={handleSubmit}>
@@ -95,6 +112,15 @@ function Login({ handleLogin }) {
           className="w-full flex justify-center py-2 px-4 border border-transparent rounded-md shadow-sm text-sm font-medium text-platinum bg-saffron hover:bg-keppel focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-keppel"
         >
           Sign In
+        </button>
+      </div>
+      <div className="text-center">
+        <button
+          type="button"
+          onClick={() => setIsResettingPassword(true)}
+          className="text-keppel hover:underline focus:outline-none"
+        >
+          Forgot Password?
         </button>
       </div>
     </form>
