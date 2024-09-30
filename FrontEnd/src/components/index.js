@@ -9,3 +9,4 @@ export { default as SingleItem } from "./SingleItem";
 export { default as Cart } from "./Cart";
 export { default as Products } from "./Products";
 export { default as Learning } from "./Learning";
+export { default as Supplies } from "./Supplies";

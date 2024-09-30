@@ -29,13 +29,13 @@ function Products() {
     e.stopPropagation();
     dispatch({ type: "ADD_TO_CART", payload: product });
     setShowCartOption(true);
-    setTimeout(() => setShowCartOption(false), 5000); // Hide option after 5 seconds
+    setTimeout(() => setShowCartOption(false), 5000); 
   };
 
   const goToCart = () => {
     navigate("/cart");
   };
-
+  console.log(mydata);
   return (
     <div className="relative">
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
@@ -48,7 +48,7 @@ function Products() {
             <img
               src={product.image_url}
               alt={product.name}
-              className="w-full h-48 object-cover mb-4 rounded"
+              className="w-full h-68 object-cover mb-4 rounded"
               onError={(e) => {
                 e.target.src = '/path/to/placeholder/image.jpg';
               }}

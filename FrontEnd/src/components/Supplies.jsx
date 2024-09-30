@@ -42,7 +42,7 @@ function Supplies() {
             alt={supply.name}
             className="w-full h-48 object-cover mb-4 rounded"
             onError={(e) => {
-              e.target.src = '/path/to/placeholder/image.jpg'; // Use an actual path to a placeholder image
+              e.target.src = '/path/to/placeholder/image.jpg'; 
             }}
           />
           <h2 className="text-xl font-semibold mb-2">{supply.name}</h2>

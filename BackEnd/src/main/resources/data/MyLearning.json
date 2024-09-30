@@ -3,28 +3,25 @@
     "id": 1,
     "name": "How to Crochet for Beginners",
     "description": "Introduction to crocheting for beginners.",
-    "skillLevel": "Beginner",
     "url": "https://www.youtube.com/watch?v=GZesdWQG9YA"
   },
   {
     "id": 2,
     "name": "How to Embroider by Hand for Beginners",
     "description": "Video on how to embroider by hand for beginners",
-    "skillLevel": "Beginner",
     "url": "https://www.youtube.com/watch?v=PnNuzgSplaE"
   },
   {
     "id": 3,
     "name": "Crochet Abbreviations",
     "description": "Learn the abbreviations in US and UK terms for crochet.",
-    "skillLevel": "All",
     "url": "https://www.youtube.com/watch?v=jOdPCill7OE"
   },
   {
     "id": 4,
     "name": "Knitting for Complete Beginners",
     "description": "A video playlist to learn how to knit",
-    "url": "https://www.youtube.com/playlist?list=PLktwZD2r4pJiDcwCBytrAp1GXCbLrLcMx"
+    "url": "https://www.youtube.com/watch?v=ASzIh5SOo68"
   },
   {
     "id": 5,

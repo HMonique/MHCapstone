@@ -1,18 +1,18 @@
 [
   {
     "id": 1,
-    "name": "Patsy Peacock",
-    "description": "Amigurumi (crocheted stuffed toy) of a peacock.",
-    "category": "Kitchenware",
-    "image_url": "https://res.cloudinary.com/dz6nyvamk/image/upload/v1727117817/Giraffe_pmlqpi.jpg",
-    "price": 25.99
+    "name": "Pepper the Peacock",
+    "description": "Crocheted peacock plush toy.",
+    "category": "Crochet",
+    "image_url": "https://res.cloudinary.com/dz6nyvamk/image/upload/v1727580578/Crochet-Little-Peacock-Amigurumi_yamezs.jpg",
+    "price": 30.00
   },
   {
     "id": 2,
     "name": "Ceramic Vase",
     "description": "A decorative ceramic vase with intricate patterns.",
     "category": "Home Decor",
-    "image_url": "https://res.cloudinary.com/dz6nyvamk/image/upload/v1727117817/Giraffe_pmlqpi.jpg",
+    "image_url": "https://res.cloudinary.com/dz6nyvamk/image/upload/v1727719659/Crochet-Teddy-Bear-Amigurumi-Pattern-Step-By-Step_ffolxx.jpg",
     "price": 45.50
   },
   {
@@ -20,7 +20,7 @@
     "name": "Knitted Scarf",
     "description": "A warm and cozy knitted scarf made from wool.",
     "category": "Apparel",
-    "image_url": "https://res.cloudinary.com/dz6nyvamk/image/upload/v1727117817/Giraffe_pmlqpi.jpg",
+    "image_url": "https://res.cloudinary.com/dz6nyvamk/image/upload/v1727720275/c68e0f7a-9304-4453-89d8-e81a8ddde5a4_hbnrb3.jpg",
     "price": 15.75
   },
   {
@@ -28,7 +28,7 @@
     "name": "Leather Wallet",
     "description": "A durable leather wallet with multiple compartments.",
     "category": "Accessories",
-    "image_url": "https://res.cloudinary.com/dz6nyvamk/image/upload/v1727117817/Giraffe_pmlqpi.jpg",
+    "image_url": "https://res.cloudinary.com/dz6nyvamk/image/upload/v1727720791/free-photo-of-stuffed-bunny-against-a-pink-background_smxlpv.jpg",
     "price": 35.00
   },
   {
@@ -36,7 +36,7 @@
     "name": "Handmade Soap",
     "description": "Organic handmade soap with lavender scent.",
     "category": "Bath & Body",
-    "image_url": "https://res.cloudinary.com/dz6nyvamk/image/upload/v1727117817/Giraffe_pmlqpi.jpg",
+    "image_url": "https://res.cloudinary.com/dz6nyvamk/image/upload/v1727721168/Crochet-Unicorn-Leela-Amigurumi-Pattern_p1cbyw.jpg",
     "price": 8.99
   },
   {
@@ -44,7 +44,7 @@
     "name": "Bamboo Cutting Board",
     "description": "Eco-friendly bamboo cutting board for your kitchen.",
     "category": "Kitchenware",
-    "image_url": "https://res.cloudinary.com/dz6nyvamk/image/upload/v1727117817/Giraffe_pmlqpi.jpg",
+    "image_url": "https://res.cloudinary.com/dz6nyvamk/image/upload/v1727721827/images_myxcwr.jpg",
     "price": 20.00
   },
   {
