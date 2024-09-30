@@ -6,16 +6,16 @@ function Navbar({ isLoggedIn, handleLogout }) {
     <nav className="bg-onyx text-platinum p-4">
       <div className="container mx-auto flex justify-between items-center">
         <div className="flex items-center">
-        <Link to="/home" className="mr-4 hover:text-keppel">
+        <Link to="/home" className="mr-4 hover:text-purple-500">
             Home
           </Link>
-          <Link to="/products" className="mr-4 hover:text-keppel">
+          <Link to="/products" className="mr-4 hover:text-purple-500">
             Products
           </Link>
-          <Link to="/supplies" className="mr-4 hover:text-keppel">
+          <Link to="/supplies" className="mr-4 hover:text-purple-500">
             Supplies
           </Link>
-          <Link to="/learning" className="mr-4 hover:text-keppel">
+          <Link to="/learning" className="mr-4 hover:text-purple-500">
             Learning
           </Link>
         </div>
@@ -26,7 +26,7 @@ function Navbar({ isLoggedIn, handleLogout }) {
           {isLoggedIn ? (
             <button
               onClick={handleLogout}
-              className="bg-saffron text-onyx px-4 py-2 rounded hover:bg-keppel"
+              className="bg-grad text-onyx px-4 py-2 rounded hover:bg-keppel"
             >
               Logout
             </button>

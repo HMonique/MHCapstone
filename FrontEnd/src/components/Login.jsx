@@ -9,11 +9,11 @@ function Login({ handleLogin }) {
   const [resetMessage, setResetMessage] = useState("");
 
   const decryptPassword = async (encryptedPassword, key, iv) => {
-    // ... (keep the existing decryptPassword function)
+ 
   };
 
   const handleSubmit = async (e) => {
-    // ... (keep the existing handleSubmit function)
+ 
   };
 
   const handleResetPassword = async (e) => {
@@ -21,9 +21,7 @@ function Login({ handleLogin }) {
     setResetMessage("");
 
     try {
-      // In a real application, this would be an API call to initiate password reset
-      // For this example, we'll just simulate the process
-      await new Promise(resolve => setTimeout(resolve, 1000)); // Simulate API call
+      await new Promise(resolve => setTimeout(resolve, 1000)); 
       setResetMessage("Password reset instructions sent to your email.");
       setResetEmail("");
     } catch (error) {
