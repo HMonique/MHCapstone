@@ -6,7 +6,7 @@ function Navbar({ isLoggedIn, handleLogout }) {
     <nav className="bg-onyx text-platinum p-4">
       <div className="container mx-auto flex justify-between items-center">
         <div className="flex items-center">
-        <Link to="/home" className="mr-4 hover:text-purple-500">
+        <Link to="/" className="mr-4 hover:text-purple-500">
             Home
           </Link>
           <Link to="/products" className="mr-4 hover:text-purple-500">

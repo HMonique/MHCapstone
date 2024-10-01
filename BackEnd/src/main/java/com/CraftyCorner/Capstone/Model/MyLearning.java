@@ -13,7 +13,6 @@ public class MyLearning {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer id;
     private String name;
-    private String description;
     private String skillLevel;
     private String url;
 }

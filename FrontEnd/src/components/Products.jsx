@@ -46,7 +46,7 @@ function Products() {
             onClick={() => handleItemClick(product.id)}
           >
             <img
-              src={product.product_url}
+              src={product.image_url}
               alt={product.name}
               className="w-full h-68 object-cover mb-4 rounded"
               onError={(e) => {

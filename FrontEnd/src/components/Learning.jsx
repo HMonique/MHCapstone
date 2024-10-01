@@ -96,8 +96,8 @@ function Learning() {
   const [error, setError] = useState(null);
   const navigate = useNavigate();
 
-  const handleItemClick = (id) => {
-    navigate(`/learning/${id}`);
+  const handleItemClick = (id, url, name, description, skilllevel) => {
+    navigate(`/learning/${id}`, {state: {id: id, name: name, description: description, url: url, skilllevel: skilllevel}});
   };
 
   useEffect(() => {
@@ -109,6 +109,7 @@ function Learning() {
           throw new Error('Network response was not ok');
         }
         const data = await response.json();
+        console.log(data)
         setMyData(data);
       } catch (error) {
         console.error("Error fetching data:", error);
@@ -131,20 +132,19 @@ function Learning() {
           <div
             key={item.url}
             className="bg-platinum p-4 rounded-lg shadow-md cursor-pointer hover:shadow-lg transition-shadow"
-            onClick={() => handleItemClick(item.url)}
+            onClick={() => handleItemClick(item.id, item.url, item.name, item.description, item.skilllevel)}
           >
-            <video
+            {/* <video
               src={item.url}
               className="w-full h-48 object-cover mb-4 rounded"
               controls
               poster="/path/to/poster-image.jpg"
             >
               Your browser does not support the video tag.
-            </video>
+            </video> */}
+            <iframe width="350" height="315" src={item.url} title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
             <h2 className="text-xl font-semibold mb-2">{item.name}</h2>
-            <p className="text-gray-600 mb-2">{item.description}</p>
-            <p className="text-gray-500 text-sm">Skill Level: {item.skilllevel}</p>
-            <p className="text-gray-500 text-sm mt-2">Supplies: {item.supplies}</p>
+            <p className="text-black text-sm">Skill Level: {item.skilllevel}</p>
           </div>
         ))}
       </div>

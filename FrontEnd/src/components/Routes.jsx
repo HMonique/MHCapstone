@@ -58,7 +58,7 @@ import LearningItem from "./LearningItem";
 function Routes({ isLoggedIn, handleLogin }) {
   return (
     <R>
-      <Route path="/learning/url" element={<Learning />} />
+      <Route path="/learning" element={<Learning />} />
       <Route path="/products" element={<Products />} />
       <Route path="/" element={<Home />} />
       <Route path="/about" element={<About />} />
@@ -66,7 +66,7 @@ function Routes({ isLoggedIn, handleLogin }) {
       <Route path="/item/:id" element={<SingleItem />} />
       <Route path="/cart" element={<Cart />} />
       <Route path="/supplies" element={<Supplies />} />
-      <Route path="/learningitem/:url" element={<LearningItem />} />
+      <Route path="/learning/:idz" element={<LearningItem />} />
    
       <Route path="/login" element={
           <AuthWrapper title="Login">

@@ -9,7 +9,7 @@ import org.springframework.web.bind.annotation.*;
 import java.util.List;
 
 @RestController
-@RequestMapping("/CraftyCorner")
+@RequestMapping("/user")
 public class UserController {
 
     private final UserRepository userRepository;
@@ -18,7 +18,7 @@ public class UserController {
         this.userRepository = userRepository;
     }
 
-    @GetMapping("/user")
+    @GetMapping
     public ResponseEntity<List<MyAppUser>> getAllUsers() {
         List<MyAppUser> users = userRepository.findAll();
         return ResponseEntity.ok(users);

@@ -33,22 +33,23 @@ function Supplies() {
     return <div>Error: {error}</div>;
   }
 
+  console.log(supplies);
   return (
     <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
       {supplies.map((supply) => (
         <div key={supply.id} className="bg-platinum p-4 rounded-lg shadow-md">
-          <div className="w-full h-48 mb-4 rounded bg-gray-200 flex items-center justify-center">
+          <div className="w-1/2 h-48 mb-4 rounded bg-gray-200 flex items-center justify-center">
             <img
-              src={supply.product_url} // Ensure this matches your JSON key
+              src={supply.image_url} // Ensure this matches your JSON key
               alt={supply.name}
               className="w-full h-full object-cover rounded"
             />
           </div>
-          <h2 className="text-xl font-semibold mb-2">{supply.name}</h2>
+          <h2 className="text-lg font-semibold mb-2">{supply.name}</h2>
           <p className="text-gray-600 mb-2">{supply.description}</p>
           <p className="text-keppel font-bold">${supply.price.toFixed(2)}</p>
           <Link to={`/supply/${supply.id}`} className="mt-4 bg-saffron text-onyx px-4 py-2 rounded hover:bg-keppel">
-            View Details
+            Add to Cart
           </Link>
         </div>
       ))}
