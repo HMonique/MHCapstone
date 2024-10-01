@@ -44,7 +44,7 @@
     "name": "Edmundo Elephant",
     "description": "His name is Edmundo but friends call him Eddie.",
     "category": "Kitchenware",
-    "image_url": "https://res.cloudinary.com/dz6nyvamk/image/upload/v1727721827/images_myxcwr.jpg",
+    "image_url": "https://res.cloudinary.com/dz6nyvamk/image/upload/v1727792005/Free-Crochet-Elephant-Amigurumi-Pattern_fapg6f.jpg",
     "price": 30.00
   },
   {
@@ -60,7 +60,7 @@
     "name": "Milicent Mouse",
     "description": "She's a little shy, but she's a magnificent mouse.",
     "category": "Amigurumi",
-    "image_url": "https://res.cloudinary.com/dz6nyvamk/image/upload/v1727722825/yuuju8t51mwr7ftcg7sh.jpg",
+    "image_url": "https://res.cloudinary.com/dz6nyvamk/image/upload/v1727793053/Free-Crochet-Mouse-Girl-Amigurumi-Pattern_vzrpmq.jpg",
     "price": 30.00
   },
   {
@@ -74,7 +74,7 @@
   {
     "id": 10,
     "name": "Finn the Fox",
-    "description": "Finn is a sly as they come but he's also a barrel of fun.",
+    "description": "Finn is a sly as they come but he's a real softie.",
     "category": "Amigurumi",
     "image_url": "https://res.cloudinary.com/dz6nyvamk/image/upload/v1727723756/Crochet-Coyote_mhjljg.jpg",
     "price": 45.00
@@ -93,6 +93,30 @@
     "description": "Pedro loves to cop a squawk and have a talk.",
     "category": "Amigurumi",
     "image_url": "https://res.cloudinary.com/dz6nyvamk/image/upload/v1727741845/Crochet-Parrot-Amigurumi-Pattern-1_ubnjee.jpg",
+    "price": 40.00
+  },
+  {
+    "id": 13,
+    "name": "Lincoln the Lion",
+    "description": "King of the jungle, but a gentle giant.",
+    "category": "Amigurumi",
+    "image_url": "https://res.cloudinary.com/dz6nyvamk/image/upload/v1727741738/Crochet-Little-Lion-Amigurumi-Pattern-1_wg61ij.jpg",
+    "price": 40.00
+  },
+  {
+    "id": 14,
+    "name": "Olympia Owl",
+    "description": "As wise as they come, Olympia Owl is a hoot!",
+    "category": "Amigurumi",
+    "image_url": "https://res.cloudinary.com/dz6nyvamk/image/upload/v1727793209/Crochet-Owl-Amigurumi-Pattern_jkeovt.jpg",
+    "price": 40.00
+  },
+  {
+    "id": 15,
+    "name": "Magnus the Monkey",
+    "description": "He's a real charmer and a barrel of fun.",
+    "category": "Amigurumi",
+    "image_url": "https://res.cloudinary.com/dz6nyvamk/image/upload/v1727793945/Free-Crochet-Monkey-Amigurumi-Pattern_daymbh.jpg",
     "price": 40.00
   }
 ]

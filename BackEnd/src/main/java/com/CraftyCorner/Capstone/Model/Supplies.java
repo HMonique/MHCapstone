@@ -21,4 +21,5 @@ public class Supplies {
     private String name;
     private String description;
     private Integer price;
+    private String product_url;
 }

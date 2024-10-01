@@ -1,6 +1,7 @@
 package com.CraftyCorner.Capstone.Common;
 
 import com.CraftyCorner.Capstone.Model.Product;
+
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 
