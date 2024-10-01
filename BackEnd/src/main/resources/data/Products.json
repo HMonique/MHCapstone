@@ -1,82 +1,98 @@
 [
   {
     "id": 1,
-    "name": "Pepper the Peacock",
-    "description": "Crocheted peacock plush toy.",
-    "category": "Crochet",
+    "name": "Pepper Peacock",
+    "description": "A colorful peacock to brighten up your day.",
+    "category": "Amigurumi",
     "image_url": "https://res.cloudinary.com/dz6nyvamk/image/upload/v1727580578/Crochet-Little-Peacock-Amigurumi_yamezs.jpg",
-    "price": 30.00
+    "price": 45.00
   },
   {
     "id": 2,
-    "name": "Ceramic Vase",
-    "description": "A decorative ceramic vase with intricate patterns.",
-    "category": "Home Decor",
+    "name": "Bon Bon Bear",
+    "description": "The sweetest bear there is. Hence the name!",
+    "category": "Amigurumi",
     "image_url": "https://res.cloudinary.com/dz6nyvamk/image/upload/v1727719659/Crochet-Teddy-Bear-Amigurumi-Pattern-Step-By-Step_ffolxx.jpg",
-    "price": 45.50
+    "price": 30.00
   },
   {
     "id": 3,
-    "name": "Knitted Scarf",
-    "description": "A warm and cozy knitted scarf made from wool.",
-    "category": "Apparel",
+    "name": "Ginnie & Gemma Giraffe",
+    "description": "Twin sisters who love to play and have fun.",
+    "category": "Amigurumi",
     "image_url": "https://res.cloudinary.com/dz6nyvamk/image/upload/v1727720275/c68e0f7a-9304-4453-89d8-e81a8ddde5a4_hbnrb3.jpg",
-    "price": 15.75
+    "price": 40.00
   },
   {
     "id": 4,
-    "name": "Leather Wallet",
-    "description": "A durable leather wallet with multiple compartments.",
-    "category": "Accessories",
-    "image_url": "https://res.cloudinary.com/dz6nyvamk/image/upload/v1727720791/free-photo-of-stuffed-bunny-against-a-pink-background_smxlpv.jpg",
+    "name": "BB Bunny",
+    "description": "She's bashful and blushing. She's BB Bunny!",
+    "category": "Amigurumi",
+    "image_url": "https://res.cloudinary.com/dz6nyvamk/image/upload/v1727741533/Free-Crochet-Bunny-Girl-Amigurumi-Pattern-1_iwwra0.jpg",
     "price": 35.00
   },
   {
     "id": 5,
-    "name": "Handmade Soap",
-    "description": "Organic handmade soap with lavender scent.",
-    "category": "Bath & Body",
+    "name": "Una the Unicorn",
+    "description": "A magical unicorn to bring you good luck and fortune.",
+    "category": "Amigurumi",
     "image_url": "https://res.cloudinary.com/dz6nyvamk/image/upload/v1727721168/Crochet-Unicorn-Leela-Amigurumi-Pattern_p1cbyw.jpg",
-    "price": 8.99
+    "price": 45.00
   },
   {
     "id": 6,
-    "name": "Bamboo Cutting Board",
-    "description": "Eco-friendly bamboo cutting board for your kitchen.",
+    "name": "Edmundo Elephant",
+    "description": "His name is Edmundo but friends call him Eddie.",
     "category": "Kitchenware",
     "image_url": "https://res.cloudinary.com/dz6nyvamk/image/upload/v1727721827/images_myxcwr.jpg",
-    "price": 20.00
+    "price": 30.00
   },
   {
     "id": 7,
-    "name": "Woolen Hat",
-    "description": "A stylish woolen hat to keep you warm during winter.",
-    "category": "Apparel",
-    "image_url": "https://res.cloudinary.com/dz6nyvamk/image/upload/v1727117817/Giraffe_pmlqpi.jpg",
-    "price": 12.50
+    "name": "Felipe Frog",
+    "description": "Felipe is jumping for joy to meet you!",
+    "category": "Apmigurumi",
+    "image_url": "https://res.cloudinary.com/dz6nyvamk/image/upload/v1727722761/Free-Crochet-Frog-Amigurumi-Pattern_cklhxn.jpg",
+    "price": 30.00
   },
   {
     "id": 8,
-    "name": "Glass Pendant Light",
-    "description": "A modern glass pendant light for your living room.",
-    "category": "Lighting",
-    "image_url": "https://res.cloudinary.com/dz6nyvamk/image/upload/v1727117817/Giraffe_pmlqpi.jpg",
-    "price": 60.00
+    "name": "Milicent Mouse",
+    "description": "She's a little shy, but she's a magnificent mouse.",
+    "category": "Amigurumi",
+    "image_url": "https://res.cloudinary.com/dz6nyvamk/image/upload/v1727722825/yuuju8t51mwr7ftcg7sh.jpg",
+    "price": 30.00
   },
   {
     "id": 9,
-    "name": "Hand-painted Mug",
-    "description": "A unique hand-painted mug for your coffee or tea.",
+    "name": "Calliope Cat",
+    "description": "Calliope is a cool cat.",
     "category": "Kitchenware",
-    "image_url": "https://res.cloudinary.com/dz6nyvamk/image/upload/v1727117817/Giraffe_pmlqpi.jpg",
-    "price": 10.99
+    "image_url": "https://res.cloudinary.com/dz6nyvamk/image/upload/v1727722935/images_ldg1e8.jpg",
+    "price": 25.00
   },
   {
     "id": 10,
-    "name": "Cotton Tote Bag",
-    "description": "A reusable cotton tote bag for your shopping needs.",
-    "category": "Accessories",
-    "image_url": "https://res.cloudinary.com/dz6nyvamk/image/upload/v1727117817/Giraffe_pmlqpi.jpg",
-    "price": 5.99
+    "name": "Finn the Fox",
+    "description": "Finn is a sly as they come but he's also a barrel of fun.",
+    "category": "Amigurumi",
+    "image_url": "https://res.cloudinary.com/dz6nyvamk/image/upload/v1727723756/Crochet-Coyote_mhjljg.jpg",
+    "price": 45.00
+  },
+  {
+    "id": 11,
+    "name": "Benjamin Bumble",
+    "description": "What a honey! Benjamin Bumble is the bee's knees.",
+    "category": "Amigurumi",
+    "image_url": "https://theamigurumi.com/wp-content/uploads/2024/01/Crochet-Bee-Amigurumi-Pattern-Step-By-Step.jpg",
+    "price": 35.00
+  },
+  {
+    "id": 12,
+    "name": "Pedro the Parrot",
+    "description": "Pedro loves to cop a squawk and have a talk.",
+    "category": "Amigurumi",
+    "image_url": "https://res.cloudinary.com/dz6nyvamk/image/upload/v1727741845/Crochet-Parrot-Amigurumi-Pattern-1_ubnjee.jpg",
+    "price": 40.00
   }
 ]

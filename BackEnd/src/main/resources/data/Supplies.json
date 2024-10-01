@@ -2,15 +2,16 @@
   {
     "id": 1,
     "name": "Poly-Fil",
-    "description": "Acrylic Paint Set",
+    "description": "Polyester Fiberfill",
     "product_url": "https://res.cloudinary.com/dz6nyvamk/image/upload/v1727199663/Poly-fil_dwhjc6.avif",
-    "price": 25
+    "price": 12.99
   },
   {
     "id": 2,
     "name": "Canvas Board",
     "description": "Canvas Board",
-    "price": 15
+    "product_url": "https://res.cloudinary.com/dz6nyvamk/image/upload/v1727197537/Crochet_Hooks_vn0yff.avif",
+    "price": 5.99
   },
   {
     "id": 3,
