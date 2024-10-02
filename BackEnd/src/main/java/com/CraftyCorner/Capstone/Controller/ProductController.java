@@ -23,4 +23,10 @@ public class ProductController {
         List<Product> products = productRepository.findAll();
         return ResponseEntity.ok(products);
     }
+
+    @GetMapping("/product/{id}")
+    public ResponseEntity<Product> getProductById(@PathVariable Integer id) {
+        Product product = productRepository.findById(id).orElse(null);
+        return ResponseEntity.ok(product);
+    }
 }

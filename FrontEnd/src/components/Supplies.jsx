@@ -1,10 +1,14 @@
 import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
+import { StoreProvider } from "../store/ContextProvider";
+import { useNavigate } from "react-router-dom";
+
 
 function Supplies() {
   const [supplies, setSupplies] = useState([]);
   const [isLoading, setIsLoading] = useState(true);
   const [error, setError] = useState(null);
+  const [showCartOption , setShowCartOption] = useState(false);
 
   useEffect(() => {
     const fetchSupplies = async () => {
@@ -48,7 +52,7 @@ function Supplies() {
           <h2 className="text-lg font-semibold mb-2">{supply.name}</h2>
           <p className="text-gray-600 mb-2">{supply.description}</p>
           <p className="text-keppel font-bold">${supply.price.toFixed(2)}</p>
-          <Link to={`/supply/${supply.id}`} className="mt-4 bg-saffron text-onyx px-4 py-2 rounded hover:bg-keppel">
+          <Link to={`/cart`} className="mt-4 bg-saffron text-onyx px-4 py-2 rounded hover:bg-keppel">
             Add to Cart
           </Link>
         </div>

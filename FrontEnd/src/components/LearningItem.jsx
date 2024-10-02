@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import { useLocation, useParams } from "react-router-dom";
 
 function LearningItem() {
-  // const { url } = useParams();
+ 
   const {state} = useLocation();
   console.log(state);
   const {url, name} = state;
@@ -10,12 +10,11 @@ function LearningItem() {
 
   console.log(url);
   useEffect(() => {
-    // Fetch the individual item data here
-    // For now, we'll just log the id
+   
     console.log(`Fetching data for learning item ${url}`);
   }, [url]);
 
-  // if (!item) return <div>Loading...</div>;
+
 
   return (
     <div>

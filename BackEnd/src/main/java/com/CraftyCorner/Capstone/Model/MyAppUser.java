@@ -14,7 +14,8 @@ import java.util.Set;
 @Table(name = "user")
 @Entity
 public class MyAppUser {
-    @Id @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer id;
     private String username;
     private String password;
@@ -29,4 +30,17 @@ public class MyAppUser {
     private Set<Roles> roles;
 
 
+    public void setPassword(String password) {
+    }
+
+    public void setUsername(String username) {
+    }
+
+    public void setEmail(String email) {
+    }
+
+    public Object getPassword() {
+        return null;
+
+    }
 }

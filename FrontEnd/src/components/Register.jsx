@@ -42,9 +42,9 @@ function Register() {
       }
 
       const data = await response.json();
-      dispatch({ type: 'REGISTER_USER', payload: data }); // Adjust based on your context
+      dispatch({ type: 'REGISTER_USER', payload: data }); 
       setSuccessMessage('Registration successful! You can now log in.');
-      setFormData({ name: '', email: '', password: '', confirmPassword: '' }); // Reset form
+      setFormData({ name: '', email: '', password: '', confirmPassword: '' }); 
     } catch (error) {
       setError(error.message);
     }
