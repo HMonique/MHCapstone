@@ -42,18 +42,18 @@ function SingleItem() {
           </div> 
           ) :(
         
-      <div className="bg-platinum p-6 rounded-lg shadow-md">
+      <div className="bg- p-6 rounded-lg shadow-md">
         <img
           src={product.image_url}
           alt={product.name}
-          className="w-full h-64 object-cover mb-4 rounded"
+          className="w-full h-64 object-scale-down mb-4 rounded"
         />
         <h2 className="text-2xl font-bold mb-2">{product.name}</h2>
         <p className="text-gray-600 mb-4">{product.description}</p>
         <p className="text-keppel font-bold text-xl mb-4">
           ${product.price.toFixed(2)}
         </p>
-        <button className="w-full bg-saffron text-onyx px-4 py-2 rounded hover:bg-keppel hover:text-platinum transition-colors">
+        <button className="w-auto bg-saffron text-onyx px-4 py-2 rounded hover:bg-keppel hover:text-platinum transition-colors">
           Add to Cart
         </button>
       </div>

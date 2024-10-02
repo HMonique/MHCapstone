@@ -131,7 +131,7 @@ function Learning() {
         {mydata.map((item) => (
           <div
             key={item.url}
-            className="bg-platinum p-4 rounded-lg shadow-md cursor-pointer hover:shadow-lg transition-shadow"
+            className="bg-orange-200 p-4 rounded-lg m-auto shadow-md cursor-pointer hover:shadow-lg transition-shadow"
             onClick={() => handleItemClick(item.id, item.url, item.name, item.description, item.skilllevel)}
           >
             {/* <video
@@ -143,8 +143,7 @@ function Learning() {
               Your browser does not support the video tag.
             </video> */}
             <iframe width="350" height="315" src={item.url} title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-            <h2 className="text-xl font-semibold mb-2">{item.name}</h2>
-            <p className="text-black text-sm">Skill Level: {item.skilllevel}</p>
+            <h2 className="text-lg text-center font-semibold mb-2">{item.name}</h2>
           </div>
         ))}
       </div>
