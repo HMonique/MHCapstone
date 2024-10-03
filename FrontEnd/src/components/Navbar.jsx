@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 function Navbar({ isLoggedIn, handleLogout }) {
   return (
-    <nav className="bg-onyx text-platinum p-4">
+    <nav className="bg-pink-500 text-platinum p-4">
       <div className="container mx-auto flex justify-between items-center">
         <div className="flex items-center">
         <Link to="/" className="mr-4 hover:text-purple-500">
@@ -18,15 +18,21 @@ function Navbar({ isLoggedIn, handleLogout }) {
           <Link to="/learning" className="mr-4 hover:text-purple-500">
             Learning
           </Link>
+          <Link to="/about" className="mr-4 hover:text-purple-500">
+            About 
+          </Link>
+          <Link to="/contact" className="mr-4 hover:text-purple-500">
+            Contact
+          </Link>
         </div>
         <div className="flex items-center">
-          <Link to="/cart" className="mr-8 bg-white text-black hover:bg-purple-500">
-            🛒 Cart
+          <Link to="/cart" className="mr-4 bg-white text-black px-2 py-2 rounded-md hover:bg-purple-500">
+            Cart
           </Link>
           {isLoggedIn ? (
             <button
               onClick={handleLogout}
-              className="bg-grad text-onyx px-4 py-2 rounded hover:bg-keppel"
+              className="bg-grad text-black px-2 py-2 rounded hover:bg-keppel"
             >
               Logout
             </button>
@@ -34,13 +40,13 @@ function Navbar({ isLoggedIn, handleLogout }) {
             <>
               <Link
                 to="/login"
-                className="mr-8 bg-white text-black px-4 py-2 rounded hover:bg-purple-500"
+                className="mr-4 bg-white text-black px-2 py-2 rounded hover:bg-purple-500"
               >
                 Login
               </Link>
               <Link
                 to="/register"
-                className="mr-8 bg-white text-black px-4 py-2 rounded hover:bg-purple-500"
+                className="mr-4 bg-white text-black px-2 py-2 rounded hover:bg-purple-500"
               >
                 Register
               </Link>

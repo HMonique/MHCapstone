@@ -31,10 +31,10 @@ function SingleItem() {
   return (
     <div className="container mx-auto p-4">
       <button
-        onClick={() => navigate("/")}
-        className="mb-4 bg-saffron text-onyx px-4 py-2 rounded hover:bg-keppel"
+        onClick={() => navigate("/products")}
+        className="mb-4 bg-yellow-300 text-pink-400 px-4 py-2 rounded hover:bg-teal-300"
       >
-        Back to All Items
+        Back to Products
       </button>
       {Object.keys(product).length === 0 ? 
         (<div> 
@@ -53,7 +53,7 @@ function SingleItem() {
         <p className="text-keppel font-bold text-xl mb-4">
           ${product.price.toFixed(2)}
         </p>
-        <button className="w-auto bg-saffron text-onyx px-4 py-2 rounded hover:bg-keppel hover:text-platinum transition-colors">
+        <button className="w-auto bg-yellow-300 text-pink-600 px-4 py-2 rounded hover:bg-keppel hover:text-platinum transition-colors">
           Add to Cart
         </button>
       </div>

@@ -77,7 +77,7 @@
     "description": "Finn is a sly as they come but he's a real softie.",
     "category": "Amigurumi",
     "image_url": "https://res.cloudinary.com/dz6nyvamk/image/upload/v1727723756/Crochet-Coyote_mhjljg.jpg",
-    "price": 45.00
+    "price": 40.00
   },
   {
     "id": 11,
@@ -101,7 +101,7 @@
     "description": "King of the jungle, but a gentle giant.",
     "category": "Amigurumi",
     "image_url": "https://res.cloudinary.com/dz6nyvamk/image/upload/v1727741738/Crochet-Little-Lion-Amigurumi-Pattern-1_wg61ij.jpg",
-    "price": 40.00
+    "price": 35.00
   },
   {
     "id": 14,
@@ -117,6 +117,30 @@
     "description": "He's a real charmer and a barrel of fun.",
     "category": "Amigurumi",
     "image_url": "https://res.cloudinary.com/dz6nyvamk/image/upload/v1727793945/Free-Crochet-Monkey-Amigurumi-Pattern_daymbh.jpg",
-    "price": 40.00
+    "price": 35.00
+  },
+  {
+    "id": 15,
+    "name": "Prada Panda ",
+    "description": "Prada is a fashionista and loves to accessorize.",
+    "category": "Amigurumi",
+    "image_url": "https://res.cloudinary.com/dz6nyvamk/image/upload/v1727929366/Free-Crochet-Cute-Panda-Amigurumi-Pattern_wkhkn5.jpg",
+    "price": 35.00
+  },
+  {
+    "id": 15,
+    "name": "Magnus Monkey",
+    "description": "He's a real charmer and a barrel of fun.",
+    "category": "Amigurumi",
+    "image_url": "https://res.cloudinary.com/dz6nyvamk/image/upload/v1727793945/Free-Crochet-Monkey-Amigurumi-Pattern_daymbh.jpg",
+    "price": 35.00
+  },
+  {
+    "id": 15,
+    "name": "Magnus the Monkey",
+    "description": "He's a real charmer and a barrel of fun.",
+    "category": "Amigurumi",
+    "image_url": "https://res.cloudinary.com/dz6nyvamk/image/upload/v1727793945/Free-Crochet-Monkey-Amigurumi-Pattern_daymbh.jpg",
+    "price": 35.00
   }
 ]

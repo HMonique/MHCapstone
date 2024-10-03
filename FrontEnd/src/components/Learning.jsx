@@ -125,25 +125,24 @@ function Learning() {
   if (error) return <div className="text-center mt-8 text-red-500">Error: {error}</div>;
 
   return (
+    
     <div className="container mx-auto p-4">
-      <h1 className="text-3xl font-bold mb-6 text-center">Learning Resources</h1>
+   
+      <h1 className="text-3xl font-regular mb-6 text-center">Learning Resources</h1>
+      
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
         {mydata.map((item) => (
+          
           <div
             key={item.url}
-            className="bg-orange-200 p-4 rounded-lg m-auto shadow-md cursor-pointer hover:shadow-lg transition-shadow"
-            onClick={() => handleItemClick(item.id, item.url, item.name, item.description, item.skilllevel)}
+            
+            className="bg-white p-4 rounded-lg m-auto shadow-md cursor-pointer hover:shadow-lg transition-shadow"
+            onClick={() => handleItemClick(item.id, item.url, item.name, item.description,)}
           >
-            {/* <video
-              src={item.url}
-              className="w-full h-48 object-cover mb-4 rounded"
-              controls
-              poster="/path/to/poster-image.jpg"
-            >
-              Your browser does not support the video tag.
-            </video> */}
+            <div className="h-14 bg-gradient-to-r from-purple-500 to-pink-500"></div>
             <iframe width="350" height="315" src={item.url} title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-            <h2 className="text-lg text-center font-semibold mb-2">{item.name}</h2>
+            
+            <h2 className="text-md text-center font-normal mb-2">{item.name}</h2>
           </div>
         ))}
       </div>

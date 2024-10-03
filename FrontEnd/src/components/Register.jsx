@@ -1,5 +1,5 @@
 import React, { useState, useContext } from 'react';
-import { StoreProvider } from '../store/ContextProvider'; // Adjust the import based on your context file structure
+import { StoreProvider } from '../store/ContextProvider'; 
 
 function Register() {
   const { dispatch } = useContext(StoreProvider);
@@ -21,14 +21,13 @@ function Register() {
     setError('');
     setSuccessMessage('');
 
-    // Basic validation
     if (formData.password !== formData.confirmPassword) {
       setError("Passwords do not match.");
       return;
     }
 
     try {
-      // Replace with your actual API endpoint
+  
       const response = await fetch('http://localhost:8080/api/register', {
         method: 'POST',
         headers: {
@@ -52,9 +51,9 @@ function Register() {
 
   return (
     <div className="container mx-auto p-4">
-      <h1 className="text-3xl font-bold mb-4">Register</h1>
+   
       {error && <p className="text-red-500">{error}</p>}
-      {successMessage && <p className="text-green-500">{successMessage}</p>}
+      {successMessage && <p className="text-indigo-600">{successMessage}</p>}
       <form onSubmit={handleSubmit} className="space-y-4">
         <div>
           <label htmlFor="name" className="block mb-1">Name</label>
@@ -104,7 +103,7 @@ function Register() {
             className="w-full px-3 py-2 border rounded"
           />
         </div>
-        <button type="submit" className="w-full bg-saffron text-onyx py-2 px-4 rounded hover:bg-keppel">
+        <button type="submit" className="w-full bg-yellow-300 text-pink-600 py-2 px-4 rounded hover:bg-teal-300">
           Register
         </button>
       </form>

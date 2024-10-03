@@ -6,3 +6,19 @@
 body {
   font-family: 'Cute Stitch', sans-serif;
 }
+/* App.css */
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fade-in {
+  animation: fadeIn 2s ease-out forwards;
+}

@@ -7,13 +7,13 @@
   },
   {
     "id": 2,
-    "name": "Crochet Bunny Tutorial",
-    "description": "Video on how to embroider by hand for beginners",
-    "url": "https://www.youtube.com/embed/HKtTTl0NjNU?si=4_UgLECdOHRpAqyW"
+    "name": "Beginner's Guide to Crochet",
+    "description": "Lesson One - Supplies needed for crochet.",
+    "url": "https://www.youtube.com/embed/paRgZbyQ-co?si=-NyAu0Ie0Afk1xbr"
   },
   {
     "id": 3,
-    "name": "Quick Guide to Crochet Abbreviations",
+    "name": "Crochet Abbreviations",
     "description": "Learn the abbreviations in US and UK terms for crochet.",
     "url": "https://www.youtube.com/embed/jOdPCill7OE?si=fuxB0z38Oea40opx"
   },
@@ -31,9 +31,9 @@
   },
   {
     "id": 6,
-    "name": "Amigurumi Basics (Amigurumi 101)",
-    "description": "Introduction to Amigurumi and how to get started.",
-    "url": "https://www.youtube.com/embed/ushHnIxLdYw?si=_k9TGjGqV4wBIW79"
+    "name": "Easy Bunny Amigurumi",
+    "description": "Step-by-step tutorial on crocheting an easy bunny amigurumi.",
+    "url": "https://www.youtube.com/embed/HKtTTl0NjNU?si=4_UgLECdOHRpAqyW"
   },
   {
     "id": 7,
@@ -45,7 +45,7 @@
     "id": 8,
     "name": "Spring Security",
     "description": "Introduction to Spring Security framework.",
-    "url": "http://example.com/spring-security"
+    "url": "https://www.youtube.com/embed/HKtTTl0NjNU?si=4_UgLECdOHRpAqyW"
   },
   {
     "id": 9,

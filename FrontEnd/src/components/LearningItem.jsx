@@ -13,9 +13,6 @@ function LearningItem() {
    
     console.log(`Fetching data for learning item ${url}`);
   }, [url]);
-
-
-
   return (
     <div classsName="flex items-center justify-center h-screen"> 
       <iframe width="1000" 
