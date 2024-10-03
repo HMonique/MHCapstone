@@ -46,7 +46,7 @@ function SuppliesItem() {
     <div className="container mx-auto p-4">
       <button
         onClick={() => navigate("/supplies")}
-        className="mb-4 bg-yellow-300 text-pink-400 px-4 py-2 rounded hover:bg-teal-300"
+        className="mb-4 bg-yellow-300 text-pink-600 px-4 py-2 rounded hover:bg-teal-400"
       >
         Back to Supplies
       </button>
@@ -63,12 +63,12 @@ function SuppliesItem() {
           className="w-full h-64 object-scale-down mb-4 rounded"
         />
         <h2 className="text-2xl font-bold mb-2">{supplies.name}</h2>
-        <p className="text-gray-600 mb-4">{supplies.description}</p>
-        <p className="text-keppel font-bold text-xl mb-4">
+        <p className="text-black mb-4">{supplies.description}</p>
+        <p className="text-teal-400 font-bold text-xl mb-4">
           ${supplies.price.toFixed(2)}
         </p>
         
-        <button className="w-auto bg-yellow-300 text-pink-600 px-4 py-2 rounded hover:bg-keppel hover:text-platinum transition-colors"
+        <button className="w-auto bg-yellow-300 text-pink-600 px-4 py-2 rounded hover:bg-teal-400 hover:text-white transition-colors"
           onClick={(e) => addToCart(e, supplies)}>
           Add to Cart
         </button>

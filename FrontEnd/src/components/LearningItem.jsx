@@ -15,7 +15,7 @@ function LearningItem() {
   }, [url]);
   return (
     <div classsName="flex items-center justify-center h-screen"> 
-      <iframe width="1000" 
+    <iframe width="1000" 
       height="800" 
       src={url} 
       title="YouTube video player" 
@@ -23,7 +23,7 @@ function LearningItem() {
       allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
       referrerpolicy="strict-origin-when-cross-origin" 
       allowfullscreen
-      className="mx-auto my-auto"
+      className="mx-auto mt-20"
       ></iframe>
       {/* Display other item details here */}
     </div>

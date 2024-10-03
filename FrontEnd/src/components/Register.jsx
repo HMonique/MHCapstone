@@ -52,7 +52,7 @@ function Register() {
   return (
     <div className="container mx-auto p-4">
    
-      {error && <p className="text-red-500">{error}</p>}
+      {error && <p className="text-violet-700">{error}</p>}
       {successMessage && <p className="text-indigo-600">{successMessage}</p>}
       <form onSubmit={handleSubmit} className="space-y-4">
         <div>
@@ -103,7 +103,7 @@ function Register() {
             className="w-full px-3 py-2 border rounded"
           />
         </div>
-        <button type="submit" className="w-full bg-yellow-300 text-pink-600 py-2 px-4 rounded hover:bg-teal-300">
+        <button type="submit" className="w-full bg-yellow-300 text-pink-600 py-2 px-4 rounded hover:bg-teal-400">
           Register
         </button>
       </form>

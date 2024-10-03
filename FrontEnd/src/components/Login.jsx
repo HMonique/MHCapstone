@@ -22,7 +22,7 @@ function Login({ handleLogin }) {
 
     try {
       await new Promise(resolve => setTimeout(resolve, 1000)); 
-      setResetMessage("Password reset instructions sent to your email.");
+      setResetMessage("Password reset link sent to email.");
       setResetEmail("");
     } catch (error) {
       console.error("Password reset error:", error);
@@ -34,7 +34,7 @@ function Login({ handleLogin }) {
     return (
       <form className="space-y-6" onSubmit={handleResetPassword}>
         <h2 className="text-2xl font-bold mb-4">Reset Password</h2>
-        {resetMessage && <p className="text-green-500">{resetMessage}</p>}
+        {resetMessage && <p className="text-violet-700">{resetMessage}</p>}
         <div>
           <label htmlFor="resetEmail" className="block text-sm font-medium text-pink-600">
             Email
@@ -46,13 +46,13 @@ function Login({ handleLogin }) {
             required
             value={resetEmail}
             onChange={(e) => setResetEmail(e.target.value)}
-            className="mt-1 block w-full px-3 py-2 bg-timberwolf border border-pink-700 rounded-md shadow-sm focus:outline-none focus:ring-teal-400 focus:border-teal-400"
+            className="mt-1 block w-full px-3 py-2 bg-white border border-pink-700 rounded-md shadow-sm focus:outline-none focus:ring-teal-400 focus:border-teal-400"
           />
         </div>
         <div>
           <button
             type="submit"
-            className="w-full flex justify-center py-2 px-4 border border-transparent rounded-md shadow-sm text-sm font-medium text-platinum bg-saffron hover:bg-keppel focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-teal-400"
+            className="w-full flex justify-center py-2 px-4 border border-transparent rounded-md shadow-sm text-sm font-medium text-white bg-yellow-300 hover:bg-teal-400 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-teal-400"
           >
             Send Reset Instructions
           </button>
@@ -72,9 +72,9 @@ function Login({ handleLogin }) {
 
   return (
     <form className="space-y-6" onSubmit={handleSubmit}>
-      {error && <p className="text-red-500">{error}</p>}
+      {error && <p className="text-violet-700">{error}</p>}
       <div>
-        <label htmlFor="email" className="block text-sm font-medium text-onyx">
+        <label htmlFor="email" className="block text-sm font-medium text-pink-600">
           Email
         </label>
         <input
@@ -84,13 +84,13 @@ function Login({ handleLogin }) {
           required
           value={email}
           onChange={(e) => setEmail(e.target.value)}
-          className="mt-1 block w-full px-3 py-2 bg-timberwolf border border-onyx rounded-md shadow-sm focus:outline-none focus:ring-keppel focus:border-keppel"
+          className="mt-1 block w-full px-3 py-2 bg-white border border-pink-600 rounded-md shadow-sm focus:outline-none focus:ring-teal-400 focus:border-teal-400"
         />
       </div>
       <div>
         <label
           htmlFor="password"
-          className="block text-sm font-medium text-onyx"
+          className="block text-sm font-medium text-pink-600"
         >
           Password
         </label>
@@ -101,13 +101,13 @@ function Login({ handleLogin }) {
           required
           value={password}
           onChange={(e) => setPassword(e.target.value)}
-          className="mt-1 block w-full px-3 py-2 bg-timberwolf border border-onyx rounded-md shadow-sm focus:outline-none focus:ring-keppel focus:border-keppel"
+          className="mt-1 block w-full px-3 py-2 bg-white border border-pink-600 rounded-md shadow-sm focus:outline-none focus:ring-teal-400 focus:border-teal-400"
         />
       </div>
       <div>
         <button
           type="submit"
-          className="w-full flex justify-center py-2 px-4 border border-transparent rounded-md shadow-sm text-sm font-medium text-platinum bg-saffron hover:bg-keppel focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-keppel"
+          className="w-full flex justify-center py-2 px-4 border border-transparent rounded-md shadow-sm text-sm font-medium text-pink-600 bg-yellow-300 hover:bg-teal-400 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-teal-400"
         >
           Sign In
         </button>
@@ -116,7 +116,7 @@ function Login({ handleLogin }) {
         <button
           type="button"
           onClick={() => setIsResettingPassword(true)}
-          className="text-keppel hover:underline focus:outline-none"
+          className="text-teal-400 hover:underline focus:outline-none"
         >
           Forgot Password?
         </button>

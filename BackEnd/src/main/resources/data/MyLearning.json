@@ -46,17 +46,5 @@
     "name": "Spring Security",
     "description": "Introduction to Spring Security framework.",
     "url": "https://www.youtube.com/embed/HKtTTl0NjNU?si=4_UgLECdOHRpAqyW"
-  },
-  {
-    "id": 9,
-    "name": "React Hooks",
-    "description": "Learn about React Hooks and their usage.",
-    "url": "http://example.com/react-hooks"
-  },
-  {
-    "id": 10,
-    "name": "Java Concurrency",
-    "description": "Understanding concurrency in Java.",
-    "url": "http://example.com/java-concurrency"
   }
-]
+  ]

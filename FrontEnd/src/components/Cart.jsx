@@ -6,7 +6,7 @@ import 'react-toastify/dist/ReactToastify.css';
 function Cart() {
   const { state, dispatch } = useContext(StoreProvider);
   const { cart } = state;
-  const notify = () => toast("Wow so easy!");
+  const notify = () => toast("Payment Successful!");
 
   const removeFromCart = (id) => {
     dispatch({ type: "REMOVE_FROM_CART", payload: id });
@@ -31,7 +31,7 @@ function Cart() {
             <div key={item.id} className="flex items-center justify-between border-b py-2">
               <div>
                 <h3 className="font-semibold">{item.name}</h3>
-                <p className="text-gray-600">${item.price.toFixed(2)}</p>
+                <p className="text-black">${item.price.toFixed(2)}</p>
               </div>
               <div className="flex items-center">
                 <button
@@ -49,7 +49,7 @@ function Cart() {
                 </button>
                 <button
                   onClick={() => removeFromCart(item.id)}
-                  className="ml-4 text-red-500"
+                  className="ml-4  text-pink-600"
                 >
                   Remove
                 </button>
@@ -62,7 +62,7 @@ function Cart() {
         </>
       )}
        <div>
-        <button onClick={notify}>pay</button>
+        <button className="mr-4 mt-60 bg-pink-600 text-black px-2 py-2 rounded hover:text-purple-500" onClick={notify}>Pay Now</button>
         <ToastContainer />
       </div>
     </div>

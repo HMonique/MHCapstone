@@ -125,22 +125,38 @@
     "description": "Prada is a fashionista and loves to accessorize.",
     "category": "Amigurumi",
     "image_url": "https://res.cloudinary.com/dz6nyvamk/image/upload/v1727929366/Free-Crochet-Cute-Panda-Amigurumi-Pattern_wkhkn5.jpg",
-    "price": 35.00
+    "price": 25.00
   },
   {
     "id": 17,
-    "name": "Magnus the Monkey",
-    "description": "He's a real charmer and a barrel of fun.",
+    "name": "Ollie Ocotupus",
+    "description": "They love to lend a hand or in their case a tentacle or eight.",
     "category": "Amigurumi",
-    "image_url": "https://res.cloudinary.com/dz6nyvamk/image/upload/v1727793945/Free-Crochet-Monkey-Amigurumi-Pattern_daymbh.jpg",
+    "image_url": "https://res.cloudinary.com/dz6nyvamk/image/upload/v1727964374/Crochet-Baby-Octopus-Amigurumi_hhfpuq.jpg",
     "price": 35.00
   },
   {
     "id": 18,
-    "name": "Magnus the Monkey",
+    "name": "Tobias Tiger",
     "description": "He's a real charmer and a barrel of fun.",
     "category": "Amigurumi",
-    "image_url": "https://res.cloudinary.com/dz6nyvamk/image/upload/v1727793945/Free-Crochet-Monkey-Amigurumi-Pattern_daymbh.jpg",
+    "image_url": "https://res.cloudinary.com/dz6nyvamk/image/upload/v1727929529/Free-Crochet-Baby-Tiger-Amigurumi-Pattern_pe1wij.jpg",
+    "price": 30.00
+  },
+  {
+    "id": 19,
+    "name": "Digit Dog",
+    "description": "He'll be your best friend and loyal companion.",
+    "category": "Amigurumi",
+    "image_url": "https://res.cloudinary.com/dz6nyvamk/image/upload/v1727929487/Crochet-Cute-Dog-Amigurumi-Pattern-1_fuprjl.jpg",
+    "price": 30.00
+  },
+  {
+    "id": 20,
+    "name": "Shyla Sheep",
+    "description": "She's cuddly and cute and loves to snuggle.",
+    "category": "Amigurumi",
+    "image_url": "https://res.cloudinary.com/dz6nyvamk/image/upload/v1727929414/Crochet-Sheep-Amigurumi-Pattern_zhgdm4.jpg",
     "price": 35.00
   }
 ]

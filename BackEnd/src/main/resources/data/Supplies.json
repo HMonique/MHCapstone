@@ -2,16 +2,16 @@
   {
     "id": 1,
     "name": "Poly-Fil",
-    "description": "Polyester Fiberfill",
-    "image_url": "https://res.cloudinary.com/dz6nyvamk/image/upload/v1727199663/Poly-fil_dwhjc6.avif",
-    "price": 12.99
+    "description": "Polyester Fiberfill, 2 oz.",
+    "image_url": "https://res.cloudinary.com/dz6nyvamk/image/upload/v1727970581/13155395_rqbxeg.jpg",
+    "price": 3.99
   },
   {
     "id": 2,
     "name": "Crochet Hook Set",
-    "description": "Canvas Board",
+    "description": "Susan Bates Silvalume Crochet Hook Set, 6 hooks, sizes G, H, I, J, K, L",
     "image_url": "https://res.cloudinary.com/dz6nyvamk/image/upload/v1727197537/Crochet_Hooks_vn0yff.avif",
-    "price": 5.99
+    "price": 10.99
   },
   {
     "id": 3,
@@ -24,43 +24,35 @@
     "id": 4,
     "name": "Red Heart Yarn",
     "description": "100% acrylic yarn, 7 oz, 364 yds, Crochet Hook Size: 5.5 mm/I-9, various colors",
-    "image_url": "https://res.cloudinary.com/dz6nyvamk/image/upload/v1727934945/exqs9gyyckdb0jca3ms9.jpg",
+    "image_url": "https://res.cloudinary.com/dz6nyvamk/image/upload/v1727979000/shopping_zmbnd6.webp",
     "price": 7.99
   },
   {
     "id": 5,
-    "name": "Watercolor Paint Set",
-    "description": "Watercolor Paint Set",
-    "price": 30
+    "name": "Lions Brand Yarn",
+    "description": "`100% cotton yarn, 3.5 oz, 186 yds, Crochet Hook Size: 5 mm/H-8, various colors",
+    "image_url": "https://res.cloudinary.com/dz6nyvamk/image/upload/v1727979628/iif4jaudkznwwvzsfmlb.jpg",
+    "price": 4.99
   },
   {
     "id": 6,
-    "name": "Easel",
-    "description": "Easel",
-    "price": 50
+    "name": "Safety Eyes",
+    "description": "Pack of 50 various sizes, black",
+    "image_url": "https://res.cloudinary.com/dz6nyvamk/image/upload/v1727979511/shopping_eigqyg.webp",
+    "price": 3.50
   },
   {
     "id": 7,
-    "name": "Palette",
-    "description": "Palette",
-    "price": 8
+    "name": "Crochet Hook Case",
+    "description": "Carrying case for 20 hooks",
+    "image_url": "https://res.cloudinary.com/dz6nyvamk/image/upload/v1727979794/kbeeagpwzzurbjuczej5.jpg",
+    "price": 10.99
   },
   {
     "id": 8,
-    "name": "Charcoal Pencils",
-    "description": "Charcoal Pencils",
+    "name": "Stitch Markers",
+    "description": "Plastic Stitch Markers, 20 pcs",
+    "image_url": "https://res.cloudinary.com/dz6nyvamk/image/upload/v1727979930/iapeoi91o1bffnoj5sin.jpg",
     "price": 12
-  },
-  {
-    "id": 9,
-    "name": "Oil Paint Set",
-    "description": "Oil Paint Set",
-    "price": 35
-  },
-  {
-    "id": 10,
-    "name": "Drawing Paper",
-    "description": "Drawing Paper",
-    "price": 18
   }
 ]

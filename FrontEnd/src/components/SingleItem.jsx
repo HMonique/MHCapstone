@@ -74,6 +74,18 @@ function SingleItem() {
         </button>
       </div>
 )}
+{showCartOption && (
+        <div className="fixed bottom-2 right-2 bg-teal-400 text-platinum p-4 rounded-lg shadow-lg">
+          <p className="mb-2">Item added to cart</p>
+          <button
+            className="bg-yellow-300 text-pink-600 px-2 py-2 rounded hover:bg-white hover:text-teal-400 transition-colors"
+            onClick={goToCart}
+          >
+            Go to Cart
+          </button>
+        </div>
+
+)}
     </div>
   );
 }

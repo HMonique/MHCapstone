@@ -39,6 +39,10 @@ function Products() {
   console.log(mydata);
   
   return (
+       
+    <div className="container mx-auto p-4">
+   
+      <h1 className="text-3xl font-regular mb-6 text-center animate-fade-in">Products</h1>
     <div className="relative">
       {/* Gradient Header */}
 
@@ -63,7 +67,7 @@ function Products() {
             <p className="text-xs text-black text-center mb-2">{product.description}</p>
             <p className="text-teal-300 font-light">${product.price.toFixed(2)}</p>
             <button
-              className="mt-4 bg-yellow-300 text-pink-600 px-4 py-2 rounded hover:bg-teal-400 hover:text-platinum transition-colors"
+              className="mt-4 bg-yellow-300 text-pink-600 px-4 py-2 rounded hover:bg-teal-400 hover:text-white transition-colors"
               onClick={(e) => addToCart(e, product)}
             >
               Add to Cart
@@ -83,6 +87,7 @@ function Products() {
         </div>
 
 )}
+    </div>
     </div>
 
 );

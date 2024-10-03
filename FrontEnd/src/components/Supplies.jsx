@@ -55,18 +55,23 @@ function Supplies() {
 
   // console.log(supply);
   return (
+       
+    <div className="container mx-auto p-4">
+   <h1 className="text-3xl font-regular mb-6 text-center animate-fade-in">Supplies</h1>
+    
     <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+      
       {supplies.map((supply) => (
         <div key={supply.id} className="bg-white p-8 rounded-lg shadow-md cursor-pointer" onClick={() => handleItemClick(supply.id)}>
           
           
           <div className="h-14 bg-gradient-to-r from-purple-500 to-pink-500"></div>
-          <div className="w-1/2 h-48 mb-4 rounded bg-gray-200 flex items-center justify-center">
+          <div className="w-1/2 h-48 mb-4 rounded bg-white flex items-center justify-center"> 
           
             <img
               src={supply.image_url}
               alt={supply.name}
-              className="w-full h-full object-center rounded"
+              className="object-contain rounded max-w-full max-h-full"
               onError={(e) => {
                 e.target.src = '/path/to/placeholder/image.jpg';
               }}
@@ -76,7 +81,7 @@ function Supplies() {
           <p className="text-black text-xs mb-2">{supply.description}</p>
           <p className="text-teal-300 font-bold">${supply.price.toFixed(2)}</p>
           <button
-              className="mt-4 bg-yellow-300 text-pink-600 px-4 py-2 rounded hover:bg-teal-400 hover:text-platinum transition-colors"
+              className="mx-auto bg-yellow-300 text-pink-600 px-4 py-2 rounded hover:bg-teal-400 hover:text-platinum transition-colors"
               onClick={(e) => addToCart(e, supply)}
             >
               Add to Cart
@@ -85,7 +90,7 @@ function Supplies() {
       ))}
       
        {showCartOption && (
-        <div className="fixed bottom-2 right-2 bg-teal-400 text-platinum p-4 rounded-lg shadow-lg">
+        <div className="fixed bottom-2 right-2 bg-teal-400 text-pink-600 p-4 rounded-lg shadow-lg">
           <p className="mb-2">Item added to cart</p>
           <button
           className="bg-yellow-300 text-pink-600 px-2 py-2 rounded hover:bg-white hover:text-teal-400 transition-colors"
@@ -96,6 +101,7 @@ function Supplies() {
       </div>
 
 )}
+  </div>
   </div>
 
 );
