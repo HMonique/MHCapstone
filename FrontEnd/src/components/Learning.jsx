@@ -130,19 +130,19 @@ function Learning() {
    
       <h1 className="text-3xl font-regular mb-6 text-center">Learning Resources</h1>
       
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
         {mydata.map((item) => (
           
           <div
             key={item.url}
             
-            className="bg-white p-4 rounded-lg m-auto shadow-md cursor-pointer hover:shadow-lg transition-shadow"
+            className="bg-white p-4 rounded-md mx-0 my-0 shadow-md cursor-pointer hover:shadow-lg transition-shadow"
             onClick={() => handleItemClick(item.id, item.url, item.name, item.description,)}
           >
-            <div className="h-14 bg-gradient-to-r from-purple-500 to-pink-500"></div>
-            <iframe width="350" height="315" src={item.url} title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            <div className="h-8 bg-gradient-to-r from-purple-500 to-pink-500"></div>
+            <iframe width="275" height="275" src={item.url} title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
             
-            <h2 className="text-md text-center font-normal mb-2">{item.name}</h2>
+            <h2 className="text-sm text-center font-normal mb-2">{item.name}</h2>
           </div>
         ))}
       </div>

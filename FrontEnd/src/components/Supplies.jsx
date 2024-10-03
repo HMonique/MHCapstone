@@ -39,9 +39,9 @@ function Supplies() {
 
   console.log(supplies);
   return (
-    <div className="grid grid-cols-4 md:grid-cols-4 lg:grid-cols-4 gap-8">
+    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
       {supplies.map((supply) => (
-        <div key={supply.id} className="bg-white p-4 rounded-lg shadow-md">
+        <div key={supply.id} className="bg-white p-8 rounded-lg shadow-md cursor-pointer">
           <div className="h-14 bg-gradient-to-r from-purple-500 to-pink-500"></div>
           <div className="w-1/2 h-48 mb-4 rounded bg-gray-200 flex items-center justify-center">
           
@@ -51,7 +51,7 @@ function Supplies() {
               className="w-full h-full object-center rounded"
             />
           </div>
-          <h2 className="text-xl font-semibold text-center mb-2">{supply.name}</h2>
+          <h2 className="text-lg font-semibold text-center mb-2">{supply.name}</h2>
           <p className="text-black text-xs mb-2">{supply.description}</p>
           <p className="text-teal-300 font-bold">${supply.price.toFixed(2)}</p>
           <Link to={`/cart`} className="mb-4 bg-yellow-300 text-pink-600 px-0 py-0 rounded hover:bg-teal-300">

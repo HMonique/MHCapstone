@@ -8,16 +8,17 @@
   },
   {
     "id": 2,
-    "name": "Canvas Board",
+    "name": "Crochet Hook Set",
     "description": "Canvas Board",
     "image_url": "https://res.cloudinary.com/dz6nyvamk/image/upload/v1727197537/Crochet_Hooks_vn0yff.avif",
     "price": 5.99
   },
   {
     "id": 3,
-    "name": "Brush Set",
-    "description": "Brush Set",
-    "price": 10
+    "name": "Yarn by Loops and Threads",
+    "description": "100% polyester yarn, 8.8 oz, 218 yds, Crochet Hook Size: 8 mm/L, various colors",
+    "image_url": "https://res.cloudinary.com/dz6nyvamk/image/upload/v1727197537/Yarn_by_Loops_and_Threads_vn0yff.avif",
+    "price": 9.99
   },
   {
     "id": 4,

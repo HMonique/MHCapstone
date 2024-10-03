@@ -22,3 +22,15 @@ body {
 .animate-fade-in {
   animation: fadeIn 2s ease-out forwards;
 }
+
+.grid-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+@media (max-width: 600px) {
+  .container {
+    grid-template-columns: 1fr; /* Single column on small screens */
+    gap: 10px;
+  }
+}

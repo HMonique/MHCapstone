@@ -32,7 +32,7 @@ function Navbar({ isLoggedIn, handleLogout }) {
           {isLoggedIn ? (
             <button
               onClick={handleLogout}
-              className="bg-grad text-black px-2 py-2 rounded hover:bg-keppel"
+            className="bg-grad text-black px-2 py-2 rounded hover:bg-teal-300"
             >
               Logout
             </button>

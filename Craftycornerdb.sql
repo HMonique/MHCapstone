@@ -1,6 +1,6 @@
 -- Create database CraftyCornerdb;
--- Use craftycornerdb
-Select * from supplies;
+-- Use craftycornerdb;
+Select * from supplies; 
 
 
 

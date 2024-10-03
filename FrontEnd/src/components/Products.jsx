@@ -61,7 +61,7 @@ function Products() {
             />
             <h2 className="text-lg font-semibold text-center mb-2">{product.name}</h2>
             <p className="text-xs text-black text-center mb-2">{product.description}</p>
-            <p className="text-keppel font-light">${product.price.toFixed(2)}</p>
+            <p className="text-teal-300 font-light">${product.price.toFixed(2)}</p>
             <button
               className="mt-4 bg-yellow-300 text-pink-600 px-4 py-2 rounded hover:bg-teal-400 hover:text-platinum transition-colors"
               onClick={(e) => addToCart(e, product)}
