@@ -54,6 +54,7 @@ import Login from './Login';
 import Register from './Register';
 import AuthWrapper from './AuthWrapper';
 import LearningItem from "./LearningItem";
+import SuppliesItem from './SuppliesItem';
 
 function Routes({ isLoggedIn, handleLogin }) {
   return (
@@ -66,7 +67,8 @@ function Routes({ isLoggedIn, handleLogin }) {
       <Route path="/item/:id" element={<SingleItem />} />
       <Route path="/cart" element={<Cart />} />
       <Route path="/supplies" element={<Supplies />} />
-      <Route path="/learning/:idz" element={<LearningItem />} />
+      <Route path="/learning/:id" element={<LearningItem />} />
+      <Route path="/supplies/:id" element={<SuppliesItem />} />
       
       <Route path="/login" element={
           <AuthWrapper title="Login">

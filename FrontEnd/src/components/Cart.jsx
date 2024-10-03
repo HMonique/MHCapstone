@@ -1,9 +1,12 @@
 import React, { useContext } from "react";
 import { StoreProvider } from "../store/ContextProvider";
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 function Cart() {
   const { state, dispatch } = useContext(StoreProvider);
   const { cart } = state;
+  const notify = () => toast("Wow so easy!");
 
   const removeFromCart = (id) => {
     dispatch({ type: "REMOVE_FROM_CART", payload: id });
@@ -58,6 +61,10 @@ function Cart() {
           </div>
         </>
       )}
+       <div>
+        <button onClick={notify}>pay</button>
+        <ToastContainer />
+      </div>
     </div>
   );
 }

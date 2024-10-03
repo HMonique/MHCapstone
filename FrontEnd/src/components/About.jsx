@@ -21,8 +21,7 @@ function About() {
           Thank you for supporting our small business and for being a part of our crafty community! Welcome to the Crafty Corner family!
         </p>
       </div>
-      <video className="w-screen min-h-screen h-40 relative" src="https://res.cloudinary.com/dz6nyvamk/video/upload/v1727900601/7565884-sd_360_640_25fps_icyyew.mp4" autoPlay muted loop></video>
-    </div>
+      </div>
   );
 }
 

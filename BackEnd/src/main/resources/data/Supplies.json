@@ -17,14 +17,15 @@
     "id": 3,
     "name": "Yarn by Loops and Threads",
     "description": "100% polyester yarn, 8.8 oz, 218 yds, Crochet Hook Size: 8 mm/L, various colors",
-    "image_url": "https://res.cloudinary.com/dz6nyvamk/image/upload/v1727197537/Yarn_by_Loops_and_Threads_vn0yff.avif",
-    "price": 9.99
+    "image_url": "https://res.cloudinary.com/dz6nyvamk/image/upload/v1727934796/images_xspbov.jpg",
+    "price": 8.99
   },
   {
     "id": 4,
-    "name": "Sketchbook",
-    "description": "Sketchbook",
-    "price": 20
+    "name": "Red Heart Yarn",
+    "description": "100% acrylic yarn, 7 oz, 364 yds, Crochet Hook Size: 5.5 mm/I-9, various colors",
+    "image_url": "https://res.cloudinary.com/dz6nyvamk/image/upload/v1727934945/exqs9gyyckdb0jca3ms9.jpg",
+    "price": 7.99
   },
   {
     "id": 5,

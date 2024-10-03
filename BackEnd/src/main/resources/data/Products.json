@@ -120,7 +120,7 @@
     "price": 35.00
   },
   {
-    "id": 15,
+    "id": 16,
     "name": "Prada Panda ",
     "description": "Prada is a fashionista and loves to accessorize.",
     "category": "Amigurumi",
@@ -128,15 +128,15 @@
     "price": 35.00
   },
   {
-    "id": 15,
-    "name": "Magnus FMonkey",
+    "id": 17,
+    "name": "Magnus the Monkey",
     "description": "He's a real charmer and a barrel of fun.",
     "category": "Amigurumi",
     "image_url": "https://res.cloudinary.com/dz6nyvamk/image/upload/v1727793945/Free-Crochet-Monkey-Amigurumi-Pattern_daymbh.jpg",
     "price": 35.00
   },
   {
-    "id": 15,
+    "id": 18,
     "name": "Magnus the Monkey",
     "description": "He's a real charmer and a barrel of fun.",
     "category": "Amigurumi",
