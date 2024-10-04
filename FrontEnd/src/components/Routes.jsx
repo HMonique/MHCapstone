@@ -68,7 +68,9 @@ function Routes({ isLoggedIn, handleLogin }) {
       <Route path="/cart" element={<Cart />} />
       <Route path="/supplies" element={<Supplies />} />
       <Route path="/learning/:id" element={<LearningItem />} />
-      <Route path="/supplies/:id" element={<SuppliesItem />} />
+      <Route path="/supply/:id" element={<SuppliesItem />} />
+      <Route path="/checkout" element={<CheckoutForm />} />
+      <Route path="/return" element={<Return />} />
       
       <Route path="/login" element={
           <AuthWrapper title="Login">
