@@ -17,8 +17,8 @@ public class WebCorsConfig {
     @Bean
     public SecurityFilterChain securityFilterChain(HttpSecurity http) throws Exception {
         http.cors(Customizer.withDefaults()).csrf(AbstractHttpConfigurer::disable)
-        .authorizeHttpRequests(auth -> auth.requestMatchers("/**").permitAll()
-                .anyRequest().authenticated());
+                .authorizeHttpRequests(auth -> auth.requestMatchers("/**").permitAll()
+                        .anyRequest().authenticated());
         return http.build();
     }
     @Bean
@@ -35,5 +35,3 @@ public class WebCorsConfig {
         return source;
     }
 }
-
-

@@ -6,8 +6,6 @@
 body {
   font-family: 'Cute Stitch', sans-serif;
 }
-/* App.css */
-
 @keyframes fadeIn {
   from {
     opacity: 0;

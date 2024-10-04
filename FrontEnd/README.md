@@ -1,4 +1,6 @@
-The FrontEnd was initialized using Vite and the BackEnd was initialized using Spring Initialize from Spring Boot.
+My project is an E-Commerce website called Crafty Corner where you can buy made to order crochet stuffed toys called Amigurumis.
+
+The FrontEnd was initialized using Vite and the BackEnd was initialized using Spring Initializer from Spring Boot.
 
 Dependencies:
 React, React DOM, React Router, Vite, Tailwind CSS, Spring Boot Web, Data-JPA,
@@ -10,8 +12,11 @@ React Router was implemented for navigation between different views.
 State Management
 A custom Context API setup (ContextProvider) was used for global state management.
 
-Styling
 Tailwind CSS and CSS in HTML
+Imported a Font called Cute Stitch
+Used animate-fade-in for headings
+Used Cloudinary to store and upload images
+Youtube - Embed codes used
 
 React: A JavaScript library for building user interfaces.
 Vite: A build tool that aims to provide a faster and leaner development experience for modern web projects.
@@ -25,7 +30,8 @@ MySQL: Relational database management system.
 Lombok: Library to reduce boilerplate code.
 Maven: Build automation tool.
 Toastify
-Axios - tried using 
+Axios - tried using for Login
+JUnit
 
 Project Structure
 
