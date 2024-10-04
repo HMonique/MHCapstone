@@ -20,7 +20,7 @@ body {
 }
 
 .animate-fade-in {
-  animation: fadeIn 2s ease-out forwards;
+  animation: fadeIn 6s ease-in-out forwards;
 }
 
 .grid-item {

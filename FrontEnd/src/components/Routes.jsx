@@ -69,9 +69,9 @@ function Routes({ isLoggedIn, handleLogin }) {
       <Route path="/supplies" element={<Supplies />} />
       <Route path="/learning/:id" element={<LearningItem />} />
       <Route path="/supply/:id" element={<SuppliesItem />} />
-      <Route path="/checkout" element={<CheckoutForm />} />
-      <Route path="/return" element={<Return />} />
-      
+  
+ 
+
       <Route path="/login" element={
           <AuthWrapper title="Login">
             <Login handleLogin={handleLogin} />
