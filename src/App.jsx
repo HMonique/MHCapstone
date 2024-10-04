@@ -16,7 +16,6 @@ function App() {
     <>
       <Navbar isLoggedIn={isLoggedIn} handleLogout={handleLogout} />
       <Routes isLoggedIn={isLoggedIn} handleLogin={handleLogin} />
-      <Routes />
     </>
   );
 }

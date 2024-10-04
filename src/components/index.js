@@ -1,6 +1,6 @@
 export { default as Home } from "./Home";
 export { default as Login } from "./Login";
-export { default as Register } from "./SignUp";
+// export { default as Register } from "./SignUp";
 export { default as Routes } from "./Routes";
 export { default as Navbar } from "./Navbar";
 export { default as AuthWrapper } from "./AuthWrapper";
@@ -9,3 +9,4 @@ export { default as SingleItem } from "./SingleItem";
 export { default as Cart } from "./Cart";
 export { default as Products } from "./Products";
 export { default as Learning } from "./Learning";
+export { default as Supplies } from "./Supplies";

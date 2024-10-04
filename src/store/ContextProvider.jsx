@@ -1,10 +1,9 @@
 import React, { createContext, useReducer } from "react";
-import { users, products } from "../data";
+import { products } from "../data";
 
 export const StoreProvider = createContext();
 
 const initialState = {
-  users,
   products,
   cart: [],
 };
