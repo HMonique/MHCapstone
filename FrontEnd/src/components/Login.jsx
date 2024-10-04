@@ -1,5 +1,6 @@
 import React, { useState } from "react";
-import axios from 'axios'; // Optional: only if using axios
+import axios from 'axios'; 
+import { useNavigate } from "react-router-dom";
 
 function Login({ handleLogin }) {
   const [email, setEmail] = useState("");
@@ -8,23 +9,44 @@ function Login({ handleLogin }) {
   const [isResettingPassword, setIsResettingPassword] = useState(false);
   const [resetEmail, setResetEmail] = useState("");
   const [resetMessage, setResetMessage] = useState("");
+  const navigate = useNavigate();
+
+  const decryptPassword = async (encryptedPassword, key, iv) => {
+    const decoder = new TextDecoder();
+    const importedKey = await crypto.subtle.importKey(
+      "raw",
+      Uint8Array.from(atob(key), (c) => c.charCodeAt(0)),
+      { name: "AES-GCM", length: 256 },
+      false,
+      ["decrypt"]
+    );
+    const decryptedData = await crypto.subtle.decrypt(
+      {
+        name: "AES-GCM",
+        iv: Uint8Array.from(atob(iv), (c) => c.charCodeAt(0)),
+      },
+      importedKey,
+      Uint8Array.from(atob(encryptedPassword), (c) => c.charCodeAt(0))
+    );
+    return decoder.decode(decryptedData);
+  };
 
   const handleSubmit = async (e) => {
-    e.preventDefault(); // Prevent the default form submission behavior
-    setError(""); // Clear any previous errors
+    e.preventDefault(); 
+    setError(""); 
 
     try {
-      // Replace with your actual backend API endpoint
+      
       const response = await axios.post("http://localhost:8080/CraftyCorner/login", {
         email,
         password,
       });
 
-      // Assuming the response contains a user object and a token
+    
       const { user, token } = response.data;
 
-      // Call the handleLogin function passed as a prop
-      handleLogin(user, token); // Pass the user and token to the parent component
+   
+      handleLogin(user, token); 
 
     } catch (error) {
       console.error("Login error:", error);
