@@ -27,7 +27,6 @@ function Register() {
     }
 
     try {
-  
       const response = await fetch('http://localhost:8080/api/register', {
         method: 'POST',
         headers: {
@@ -37,7 +36,8 @@ function Register() {
       });
 
       if (!response.ok) {
-        throw new Error('Registration failed. Please try again.');
+        const errorData = await response.json(); 
+        throw new Error(errorData.message || 'Registration failed. Please try again.');
       }
 
       const data = await response.json();
@@ -51,7 +51,6 @@ function Register() {
 
   return (
     <div className="container mx-auto p-4">
-   
       {error && <p className="text-violet-700">{error}</p>}
       {successMessage && <p className="text-indigo-600">{successMessage}</p>}
       <form onSubmit={handleSubmit} className="space-y-4">
@@ -112,3 +111,7 @@ function Register() {
 }
 
 export default Register;
+
+
+
+

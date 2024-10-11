@@ -68,7 +68,6 @@ function SuppliesItem() {
           ${supplies.price.toFixed(2)}
         </p>
         
-        
         <button className="w-auto bg-yellow-300 text-pink-600 px-4 py-2 rounded hover:bg-teal-400 hover:text-white transition-colors"
           onClick={(e) => addToCart(e, supplies)}>
           Add to Cart

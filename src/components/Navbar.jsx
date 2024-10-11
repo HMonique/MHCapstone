@@ -9,9 +9,6 @@ function Navbar({ isLoggedIn, handleLogout }) {
         <Link to="/" className="mr-4 bg-white px-2 py-2 rounded-md hover:text-purple-500">
             Home
           </Link>
-          <Link to="/about" className="mr-4 bg-white px-2 py-2 rounded-md hover:text-purple-500">
-            About 
-          </Link>
           <Link to="/products" className="mr-4 bg-white px-2 py-2 rounded-md hover:text-purple-500">
             Products
           </Link>
@@ -21,7 +18,9 @@ function Navbar({ isLoggedIn, handleLogout }) {
           <Link to="/learning" className="mr-4 bg-white px-2 py-2 rounded-md hover:text-purple-500">
             Learning
           </Link>
-          
+          <Link to="/about" className="mr-4 bg-white px-2 py-2 rounded-md hover:text-purple-500">
+            About 
+          </Link>
           <Link to="/contact" className="mr-4 bg-white px-2 py-2 rounded-md hover:text-purple-500">
             Contact
           </Link>
@@ -60,3 +59,4 @@ function Navbar({ isLoggedIn, handleLogout }) {
 }
 
 export default Navbar;
+
