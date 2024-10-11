@@ -1,13 +1,9 @@
 package com.CraftyCorner.Capstone.Controller;
 
 import com.CraftyCorner.Capstone.Common.SuppliesRepository;
-import com.CraftyCorner.Capstone.Model.Product;
 import com.CraftyCorner.Capstone.Model.Supplies;
 import org.springframework.http.ResponseEntity;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PathVariable;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
@@ -31,5 +27,21 @@ public class SuppliesController {
     public ResponseEntity<Supplies> getProductById(@PathVariable Integer id) {
         Supplies supplies = suppliesRepository.findById(id).orElse(null);
         return ResponseEntity.ok(supplies);
+    }
+
+    @PostMapping("/supplies/create")
+    public ResponseEntity<Supplies> createSupplies(@RequestBody Supplies supplies) {
+        Supplies newSupplies = suppliesRepository.save(supplies);
+        return ResponseEntity.ok(newSupplies);
+    }
+    @PostMapping("/supplies/update")
+    public ResponseEntity<Supplies> updateSupplies(@RequestBody Supplies supplies) {
+        Supplies newSupplies = suppliesRepository.save(supplies);
+        return ResponseEntity.ok(newSupplies);
+    }
+    @DeleteMapping("/supplies/{id}")
+    public ResponseEntity<Supplies> deleteSupplies(@PathVariable Integer id) {
+        suppliesRepository.deleteById(id);
+        return ResponseEntity.ok(null);
     }
 }

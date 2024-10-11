@@ -30,4 +30,21 @@ public class ProductController {
         return ResponseEntity.ok(product);
     }
 
+    @PostMapping("/product")
+    public ResponseEntity<Product> createProduct(@RequestBody Product product) {
+        Product newProduct = productRepository.save(product);
+        return ResponseEntity.ok(newProduct);
+    }
+    @PutMapping("/product")
+    public ResponseEntity<Product> updateProduct(@RequestBody Product product) {
+        Product newProduct = productRepository.save(product);
+        return ResponseEntity.ok(newProduct);
+    }
+
+    @DeleteMapping("/product/{id}")
+    public ResponseEntity<Product> deleteProduct(@PathVariable Integer id) {
+        productRepository.deleteById(id);
+        return ResponseEntity.ok(null);
+    }
+
 }

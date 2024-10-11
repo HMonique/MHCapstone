@@ -1,7 +1,5 @@
 package com.CraftyCorner.Capstone.Controller;
-import com.CraftyCorner.Capstone.Common.MyLearningRepository;
 import com.CraftyCorner.Capstone.Common.RolesRepository;
-import com.CraftyCorner.Capstone.Model.MyLearning;
 import com.CraftyCorner.Capstone.Model.Roles;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;

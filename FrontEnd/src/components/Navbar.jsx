@@ -59,3 +59,4 @@ function Navbar({ isLoggedIn, handleLogout }) {
 }
 
 export default Navbar;
+

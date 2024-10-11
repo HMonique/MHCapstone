@@ -23,4 +23,19 @@ public class UserController {
         List<MyAppUser> users = userRepository.findAll();
         return ResponseEntity.ok(users);
     }
+    @PostMapping
+    public ResponseEntity<MyAppUser> createUser(@RequestBody MyAppUser user) {
+        MyAppUser newUser = userRepository.save(user);
+        return ResponseEntity.ok(newUser);
+    }
+    @PutMapping
+    public ResponseEntity<MyAppUser> updateUser(@RequestBody MyAppUser user) {
+        MyAppUser newUser = userRepository.save(user);
+        return ResponseEntity.ok(newUser);
+    }
+    @DeleteMapping("/{id}")
+    public ResponseEntity<MyAppUser> deleteUser(@PathVariable Long id) {
+        userRepository.deleteById(id);
+        return ResponseEntity.ok(null);
+    }
 }

@@ -20,7 +20,17 @@ public class MyLearningController {
     @GetMapping("/mylearning")
     public ResponseEntity<List<MyLearning>> myLearning() {
         List<MyLearning> myLearning = myLearningRepository.findAll();
-              return ResponseEntity.ok(myLearning);
+        return ResponseEntity.ok(myLearning);
+    }
+    @PostMapping("/mylearning")
+    public ResponseEntity<MyLearning> createMyLearning(@RequestBody MyLearning myLearning) {
+        MyLearning newMyLearning = myLearningRepository.save(myLearning);
+        return ResponseEntity.ok(newMyLearning);
+    }
+    @DeleteMapping("/mylearning/{id}")
+    public ResponseEntity<Void> deleteMyLearning(@PathVariable Integer id) {
+        myLearningRepository.deleteById(id);
+        return ResponseEntity.ok().build();
     }
 }
 
