@@ -1,5 +1,6 @@
 package com.CraftyCorner.Capstone.Controller;
 
+import com.CraftyCorner.Capstone.Exceptions.PaymentException;
 import com.stripe.exception.StripeException;
 import com.stripe.model.PaymentIntent;
 import com.stripe.param.PaymentIntentCreateParams;
@@ -29,7 +30,7 @@ public class PaymentController {
             response.put("clientSecret", intent.getClientSecret());
             return ResponseEntity.ok(response);
         } catch (StripeException e) {
-            return ResponseEntity.status(HttpStatus.INTERNAL_SERVER_ERROR).body(null);
+            throw new PaymentException("Failed to create payment intent: " + e.getMessage());
         }
     }
 }
